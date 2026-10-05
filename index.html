@@ -1,0 +1,1439 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="LexDeutsch Academy">
+    <!-- Favicon Icon -->
+    <link rel="icon" type="image/png" href="assets/img/Lexdutch Logo.png">
+    <!-- Site Title -->
+    <title>LexDeutsch Academy | SPRACHE. WISSEN. ZUKUNFT. | Learn German. Shape Your Future.</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/slick.min.css">
+    <link rel="stylesheet" href="assets/css/odometer.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+      .td_why_card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .td_why_card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 16px 36px rgba(0, 0, 27, 0.08) !important;
+      }
+      .td_why_card .td_check_icon {
+        transition: all 0.3s ease;
+      }
+      .td_why_card:hover .td_check_icon {
+        background: #006699 !important;
+        color: #ffffff !important;
+        border-color: #006699 !important;
+      }
+      .td_iconbox.td_style_3 {
+        transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+      }
+      .td_iconbox.td_style_3:hover {
+        border-color: #006699 !important;
+        box-shadow: 0 10px 28px rgba(0, 102, 153, 0.08) !important;
+      }
+      .td_iconbox.td_style_3:hover .td_iconbox_title {
+        color: #006699;
+      }
+      .td_stat_strip_item {
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 22px 18px;
+        text-align: center;
+        box-shadow: 0 4px 14px rgba(0, 0, 27, 0.03);
+        transition: all 0.3s ease;
+      }
+      .td_stat_strip_item:hover {
+        transform: translateY(-4px);
+        border-color: #006699;
+        box-shadow: 0 10px 24px rgba(0, 102, 153, 0.08);
+      }
+      .td_accordian.active {
+        border-color: #006699 !important;
+        background: #ffffff !important;
+      }
+      .td_about_img_1 {
+        width: 100%;
+        height: 540px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 250px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      }
+      .td_about_img_2 {
+        width: 100%;
+        height: 330px;
+        object-fit: cover;
+        object-position: center;
+        border: 16px solid #fff;
+        border-radius: 200px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.14);
+      }
+      @media (max-width: 991px) {
+        .td_about_img_1 {
+          height: 440px;
+        }
+        .td_about_img_2 {
+          height: 270px;
+          border-width: 12px;
+        }
+      }
+      @media (max-width: 575px) {
+        .td_about_img_1 {
+          height: 360px;
+        }
+        .td_about_img_2 {
+          height: 220px;
+          border-width: 8px;
+        }
+        .td_about_badge {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body class="td_theme_2">
+    <!-- Start Preloader -->
+    <div class="td_preloader">
+      <div class="td_preloader_in">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!-- End Preloader -->
+
+    <!-- Start Header Section -->
+            <!-- ==================== Header Area Start ==================== -->
+    <header class="td_site_header td_style_1 td_sticky_header td_medium td_heading_color">
+      <div class="td_main_header">
+        <div class="container">
+          <div class="td_main_header_in">
+            <!-- 1. Logo Only -->
+            <div class="td_main_header_left">
+              <a class="td_site_branding d-flex align-items-center" href="index.html" style="text-decoration:none;">
+                <img src="assets/img/Lexdutch Logo.png" alt="LexDeutsch Academy Logo" class="td_header_logo_img">
+              </a>
+            </div>
+
+            <!-- 2. Navigation Links Only -->
+            <div class="td_main_header_center">
+              <nav class="td_nav">
+                <div class="td_nav_list_wrap">
+                  <div class="td_nav_list_wrap_in">
+                    <ul class="td_nav_list">
+                      <li><a href="index.html" class="td_accent_color">Home</a></li>
+                      <li><a href="about.html">About Us</a></li>
+                      <li><a href="courses-grid-view.html">Courses</a></li>
+                      <li><a href="about-germany.html">About Germany</a></li>
+                      <li><a href="student-corner.html">Student Corner</a></li>
+                      <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+
+            <!-- 3. Enroll Now Button Only -->
+            <div class="td_main_header_right">
+              <a href="contact.html#enquiry-form" class="td_btn td_style_1 td_radius_10 td_medium td_with_shadow">
+                <span class="td_btn_in td_white_color td_accent_bg">
+                  <span>ENROLL NOW</span>
+                  <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.1575 4.34302L3.84375 15.6567" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15.157 11.4142C15.157 11.4142 16.0887 5.2748 15.157 4.34311C14.2253 3.41142 8.08594 4.34314 8.08594 4.34314" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg> 
+                </span>             
+              </a>
+              <button class="td_mobile_menu_btn d-xl-none" type="button" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Drawer -->
+      <div class="td_mobile_drawer d-xl-none">
+        <ul class="td_mobile_nav_list">
+          <li><a href="index.html" class="td_accent_color">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="courses-grid-view.html">Courses</a></li>
+          <li><a href="about-germany.html">About Germany</a></li>
+          <li><a href="student-corner.html">Student Corner</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="pt-3 border-top">
+          <p class="td_fs_14 td_bold text-muted mb-2 text-uppercase">German Courses</p>
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            <a href="courses-grid-view.html#levels" class="badge bg-light text-dark border p-2 text-decoration-none">A1 Foundation</a>
+            <a href="courses-grid-view.html#levels" class="badge bg-light text-dark border p-2 text-decoration-none">A2 Elementary</a>
+            <a href="courses-grid-view.html#levels" class="badge bg-light text-dark border p-2 text-decoration-none">B1 Intermediate</a>
+            <a href="courses-grid-view.html#levels" class="badge bg-light text-dark border p-2 text-decoration-none">B2 Advanced</a>
+          </div>
+          <div class="mb-3">
+            <a href="tel:+919562160437" class="text-decoration-none td_heading_color td_bold d-flex align-items-center gap-2">
+              <i class="fa-solid fa-phone td_accent_color"></i> +91 9562 160 437
+            </a>
+          </div>
+          <a href="contact.html#enquiry-form" class="btn btn-primary w-100 py-2 fw-bold text-white" style="background:#006699; border:none;">ENROLL NOW</a>
+        </div>
+      </div>
+    </header>
+    <!-- ==================== Header Area End ==================== -->
+    <!-- End Header Section -->
+
+    <!-- ==================== 1. HERO SECTION ==================== -->
+    <section class="td_hero td_style_5 td_center td_hobble" id="home">
+      <div class="container">
+        <div class="td_hero_text wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.4s">
+          <div class="d-inline-flex align-items-center gap-2 td_hero_subtitle_up td_fs_16 text-uppercase td_spacing_1 td_medium td_mb_20 px-3 py-1" style="background: rgba(0,102,153,0.08); border-radius: 30px; border: 1px solid rgba(0,102,153,0.15);">
+            <img src="assets/img/flags/germany-round.svg" alt="German Flag" style="width: 22px; height: 22px; border-radius: 50%; box-shadow: 0 1px 4px rgba(0,0,0,0.15);">
+            <span>SPRACHE. WISSEN. ZUKUNFT. &nbsp;|&nbsp; Learn German. Shape Your Future.</span>
+          </div>
+          <h1 class="td_hero_title td_fs_52 td_mb_25">Learn German with Confidence</h1>
+          <p class="td_hero_subtitle td_fs_18 td_heading_color td_opacity_8 td_mb_30">Build practical German language skills for education, career, professional opportunities, and life in Germany.</p>
+          <div class="d-flex align-items-center flex-wrap gap-3 td_mb_20">
+            <a href="#contact" class="td_btn td_style_1 td_radius_10 td_medium td_fs_18">
+              <span class="td_btn_in td_white_color td_accent_bg">
+                <span>Enroll Now</span>
+                <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.1575 4.34302L3.84375 15.6567" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15.157 11.4142C15.157 11.4142 16.0887 5.2748 15.157 4.34311C14.2253 3.41142 8.08594 4.34314 8.08594 4.34314" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </a>
+            <a href="#contact" class="td_btn td_style_2 td_radius_10 td_medium td_fs_18" style="background:#ffffff; border: 2px solid #006699; color: #006699; padding: 12px 28px;">
+              <span>Book a Free Demo</span>
+            </a>
+          </div>
+          <p class="td_fs_14 td_medium td_heading_color td_opacity_7 mb-0">
+            <i class="fa-solid fa-circle-check td_accent_color me-1"></i>
+            <strong>A1 · A2 · B1 · B2</strong> | Online &amp; Classroom Training
+          </p>
+        </div>
+      </div>
+      <div class="td_hero_img_wrap wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
+        <div class="td_hero_img" style="box-shadow: 0 20px 45px rgba(0, 34, 68, 0.18); border: 6px solid #ffffff; overflow: hidden; border-radius: 50%;">
+          <img src="assets/img/lexdeutsch/hero_main_students.jpg" alt="German Language Students at LexDeutsch Academy">
+        </div>
+        <div class="td_hero_img_1 position-absolute td_hover_layer_3" style="box-shadow: 0 10px 25px rgba(0, 34, 68, 0.2); border: 4px solid #ffffff; overflow: hidden; border-radius: 50%;">
+          <img src="assets/img/lexdeutsch/hero_berlin.jpg" alt="Brandenburg Gate Berlin Germany">
+        </div>
+        <div class="td_hero_img_2 position-absolute td_hover_layer_3" style="box-shadow: 0 10px 25px rgba(0, 34, 68, 0.2); border: 4px solid #ffffff; overflow: hidden; border-radius: 50%;">
+          <img src="assets/img/lexdeutsch/hero_nurse.jpg" alt="German Healthcare & Nursing Opportunities">
+        </div>
+        <div class="td_hero_img_3 position-absolute td_hover_layer_5" style="box-shadow: 0 10px 25px rgba(0, 34, 68, 0.2); border: 4px solid #ffffff; overflow: hidden; border-radius: 50%;">
+          <img src="assets/img/lexdeutsch/hero_neuschwanstein.jpg" alt="Study and Live in Germany">
+        </div>
+        
+        <div class="td_hero_funfact td_hover_layer_5">
+          <img src="assets/img/flags/germany-round.svg" alt="German Flag" style="width: 44px; height: 44px; border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+          <div>
+            <p class="td_fs_40 td_bold td_heading_color mb-0">A1–B2</p>
+            <p class="td_mb_5 td_heading_color td_opacity_5 td_fs_12">Structured Levels</p>
+          </div>
+        </div>
+        <div class="td_hero_shape_1 td_accent_color position-absolute">
+          <svg width="602" height="602" viewBox="0 0 602 602" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M161.753 36.4035C207.321 12.4228 258.31 0.61671 309.781 2.12897C361.252 3.64123 411.46 18.4206 455.542 45.0353C499.623 71.6501 536.084 109.198 561.393 154.042C586.702 198.887 600 249.507 600 301" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-dasharray="20 20"/>
+            <path d="M67.4657 487.715C42.427 456.397 23.9433 420.362 13.1142 381.755C2.2851 343.148 -0.66817 302.758 4.43008 262.986C9.52834 223.215 22.574 184.875 42.7908 150.248C63.0077 115.62 89.9828 85.4132 122.111 61.4231" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-dasharray="20 20"/>
+            <path d="M599.556 317.316C596.535 372.583 578.232 425.927 546.686 471.407C515.14 516.888 471.588 552.719 420.882 574.911C370.175 597.102 314.304 604.784 259.49 597.099C204.676 589.415 153.071 566.666 110.422 531.386" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-dasharray="20 20"/>
+          </svg>            
+        </div>
+      </div>
+      <div class="td_hero_shape_2 position-absolute td_hover_layer_3"></div>
+      <div class="td_hero_shape_3 position-absolute td_hover_layer_5"></div>
+      <div class="td_hero_shape_4 position-absolute td_hover_layer_3"></div>
+      <div class="td_hero_shape_5 position-absolute td_hover_layer_5"><img src="assets/img/home_5/hero_shape_5.svg" alt=""></div>
+    </section>
+    <!-- End Hero Section -->
+
+    <!-- ==================== 2. QUICK HIGHLIGHTS / STATS ==================== -->
+    <div class="td_accent_bg">
+      <div class="td_height_60 td_height_lg_50"></div>
+      <div class="container">
+        <div class="text-center td_mb_35 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
+          <p class="td_fs_15 td_bold text-uppercase td_white_color td_spacing_2 mb-0" style="letter-spacing: 2px;">YOUR GERMAN JOURNEY STARTS HERE</p>
+        </div>
+        <div class="td_funfact_1_wrap wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+          <div class="td_funfact td_style_1">
+            <div class="td_funfact_in">
+              <div class="td_funfact_icon">
+                <img src="assets/img/flags/germany-round.svg" alt="" style="width: 48px; height: 48px; border-radius: 50%;">
+              </div>
+              <div class="td_funfact_right">
+                <h3 class="td_fs_32 td_white_color mb-1">A1 – B2</h3>
+                <p class="mb-0 td_white_color td_opacity_8 td_fs_14">Structured German Levels</p>
+              </div>
+            </div>
+            <svg width="140" height="120" viewBox="0 0 140 120" fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke-dasharray="8 8"><rect x="1" y="1" width="138" height="118" rx="9" stroke="white"></rect></svg>
+          </div>
+          <div class="td_funfact td_style_1">
+            <div class="td_funfact_in">
+              <div class="td_funfact_icon">
+                <img src="assets/img/icons/skill_sprechen.svg" alt="" style="width: 44px; height: 44px; filter: brightness(0) invert(1);">
+              </div>
+              <div class="td_funfact_right">
+                <h3 class="td_fs_32 td_white_color mb-1">4 Skills</h3>
+                <p class="mb-0 td_white_color td_opacity_8 td_fs_14">Speaking · Listening · Reading · Writing</p>
+              </div>
+            </div>
+            <svg width="140" height="120" viewBox="0 0 140 120" fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke-dasharray="8 8"><rect x="1" y="1" width="138" height="118" rx="9" stroke="white"></rect></svg>
+          </div>
+          <div class="td_funfact td_style_1">
+            <div class="td_funfact_in">
+              <div class="td_funfact_icon">
+                <img src="assets/img/icons/calendar_2.svg" alt="" style="width: 42px; height: 42px; filter: brightness(0) invert(1);">
+              </div>
+              <div class="td_funfact_right">
+                <h3 class="td_fs_32 td_white_color mb-1">Online &amp; Offline</h3>
+                <p class="mb-0 td_white_color td_opacity_8 td_fs_14">Flexible Learning Options</p>
+              </div>
+            </div>
+            <svg width="140" height="120" viewBox="0 0 140 120" fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke-dasharray="8 8"><rect x="1" y="1" width="138" height="118" rx="9" stroke="white"></rect></svg>
+          </div>
+          <div class="td_funfact td_style_1">
+            <div class="td_funfact_in">
+              <div class="td_funfact_icon">
+                <img src="assets/img/icons/book.svg" alt="" style="width: 42px; height: 42px; filter: brightness(0) invert(1);">
+              </div>
+              <div class="td_funfact_right">
+                <h3 class="td_fs_32 td_white_color mb-1">TELC &amp; Goethe</h3>
+                <p class="mb-0 td_white_color td_opacity_8 td_fs_14">Exam Preparation</p>
+              </div>
+            </div>
+            <svg width="140" height="120" viewBox="0 0 140 120" fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke-dasharray="8 8"><rect x="1" y="1" width="138" height="118" rx="9" stroke="white"></rect></svg>
+          </div>
+        </div>
+      </div>
+      <div class="td_height_60 td_height_lg_50"></div>
+    </div>
+    <!-- End Quick Highlights / Stats -->
+
+    <!-- ==================== 3. WHY LEARN GERMAN? ==================== -->
+    <section class="td_gray_bg_5" id="why-german">
+      <div class="td_height_112 td_height_lg_75"></div>
+      <div class="container">
+        <div class="row align-items-center td_gap_y_40">
+          <div class="col-lg-5 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+            <div class="position-relative">
+              <img src="assets/img/lexdeutsch/berlin_gate.jpg" alt="Brandenburg Gate Berlin" class="w-100 td_radius_10" style="height: 480px; object-fit: cover; box-shadow: 0 15px 35px rgba(0, 0, 27, 0.1);">
+              <div class="position-absolute td_radius_10 p-3 td_white_bg" style="bottom: 25px; left: 25px; right: 25px; box-shadow: 0 10px 25px rgba(0,0,0,0.12); border-left: 4px solid #006699;">
+                <div class="d-flex align-items-center gap-2 mb-1">
+                  <img src="assets/img/flags/germany-round.svg" alt="Germany" style="width: 20px; height: 20px; border-radius: 50%;">
+                  <span class="td_fs_14 td_bold text-uppercase td_accent_color">Europe's Economic Engine</span>
+                </div>
+                <p class="td_fs_13 td_heading_color td_opacity_8 mb-0">Over 130 million German speakers across Germany, Austria, and Switzerland.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="td_section_heading td_style_1 td_mb_30">
+              <p class="td_section_subtitle_up_2 td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_accent_color">Why Learn German?</p>
+              <h2 class="td_section_title td_fs_44 td_mb_20">Learn German. Open New Opportunities.</h2>
+              <p class="td_section_subtitle td_fs_18 mb-0">German can support your journey toward education, professional development, employment, and international opportunities.</p>
+            </div>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="p-4 td_radius_10 td_white_bg h-100 td_why_card" style="border: 1px solid #e2e8f0;">
+                  <div class="d-flex align-items-center gap-3 td_mb_12">
+                    <div class="td_center td_radius_8 flex-shrink-0" style="width: 44px; height: 44px; background: rgba(0,102,153,0.1); color: #006699;">
+                      <i class="fa-solid fa-briefcase td_fs_20"></i>
+                    </div>
+                    <h3 class="td_fs_18 td_semibold mb-0">Global Career</h3>
+                  </div>
+                  <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Develop language skills that can support your international career journey.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="p-4 td_radius_10 td_white_bg h-100 td_why_card" style="border: 1px solid #e2e8f0;">
+                  <div class="d-flex align-items-center gap-3 td_mb_12">
+                    <div class="td_center td_radius_8 flex-shrink-0" style="width: 44px; height: 44px; background: rgba(0,102,153,0.1); color: #006699;">
+                      <i class="fa-solid fa-graduation-cap td_fs_20"></i>
+                    </div>
+                    <h3 class="td_fs_18 td_semibold mb-0">World-Class Education</h3>
+                  </div>
+                  <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Prepare for education opportunities in Germany.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="p-4 td_radius_10 td_white_bg h-100 td_why_card" style="border: 1px solid #e2e8f0;">
+                  <div class="d-flex align-items-center gap-3 td_mb_12">
+                    <div class="td_center td_radius_8 flex-shrink-0" style="width: 44px; height: 44px; background: rgba(0,102,153,0.1); color: #006699;">
+                      <i class="fa-solid fa-building-columns td_fs_20"></i>
+                    </div>
+                    <h3 class="td_fs_18 td_semibold mb-0">Better Living Standards</h3>
+                  </div>
+                  <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Build the language skills needed for everyday communication and life in German-speaking environments.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="p-4 td_radius_10 td_white_bg h-100 td_why_card" style="border: 1px solid #e2e8f0;">
+                  <div class="d-flex align-items-center gap-3 td_mb_12">
+                    <div class="td_center td_radius_8 flex-shrink-0" style="width: 44px; height: 44px; background: rgba(0,102,153,0.1); color: #006699;">
+                      <i class="fa-solid fa-globe td_fs_20"></i>
+                    </div>
+                    <h3 class="td_fs_18 td_semibold mb-0">Connect With New Cultures</h3>
+                  </div>
+                  <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Learn German while developing communication and cultural understanding.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="td_height_112 td_height_lg_75"></div>
+    </section>
+    <!-- End Why Learn German Section -->
+
+    <!-- ==================== 4. EXPLORE OUR GERMAN PROGRAMS (Replaces Educve Top Categories) ==================== -->
+    <section id="categories">
+      <div class="td_height_112 td_height_lg_75"></div>
+      <div class="container">
+        <div class="td_section_heading td_style_1 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+          <p class="td_section_subtitle_up_2 td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_heading_color td_opacity_6">CORE LEVELS</p>
+          <h2 class="td_section_title td_fs_48 mb-0">EXPLORE OUR GERMAN PROGRAMS</h2>
+          <p class="td_section_subtitle td_fs_18 mb-0 mt-2">Structured CEFR levels designed for step-by-step progress and fluency</p>
+        </div>
+        <div class="td_height_50 td_height_lg_40"></div>
+        <div class="row td_gap_y_24 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+          <!-- A1 -->
+          <div class="col-xl-3 col-lg-6 col-sm-6">
+            <div class="td_iconbox td_style_6 td_radius_10 h-100 d-flex flex-column justify-content-between p-4" style="background:#ffffff; border:1px solid #e2e8f0;">
+              <div>
+                <div class="d-flex align-items-center justify-content-between td_mb_15">
+                  <span class="td_fs_32 td_bold td_accent_color">A1</span>
+                  <span class="badge py-1 px-3 td_radius_30 td_fs_12" style="background: rgba(0,102,153,0.1); color: #006699; font-weight: 600;">2 Months</span>
+                </div>
+                <h3 class="td_iconbox_title td_fs_20 td_semibold td_mb_8">German Foundation</h3>
+                <p class="td_iconbox_subtitle td_heading_color td_opacity_7 mb-0 td_fs_14">Everyday vocabulary, greetings, introductions, and basic conversations.</p>
+              </div>
+              <div class="pt-3 mt-3 d-flex align-items-center justify-content-between" style="border-top:1px solid #f1f5f9;">
+                <span class="td_fs_14 td_semibold td_accent_color">Learn More &rarr;</span>
+                <a href="courses-grid-view.html" class="td_iconbox_btn td_center">
+                  <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 6L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 11C12 11 17 7.31756 17 5.99996C17 4.68237 12 1 12 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                  
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- A2 -->
+          <div class="col-xl-3 col-lg-6 col-sm-6">
+            <div class="td_iconbox td_style_6 td_radius_10 h-100 d-flex flex-column justify-content-between p-4" style="background:#ffffff; border:1px solid #e2e8f0;">
+              <div>
+                <div class="d-flex align-items-center justify-content-between td_mb_15">
+                  <span class="td_fs_32 td_bold td_accent_color">A2</span>
+                  <span class="badge py-1 px-3 td_radius_30 td_fs_12" style="background: rgba(0,102,153,0.1); color: #006699; font-weight: 600;">2 Months</span>
+                </div>
+                <h3 class="td_iconbox_title td_fs_20 td_semibold td_mb_8">Elementary German</h3>
+                <p class="td_iconbox_subtitle td_heading_color td_opacity_7 mb-0 td_fs_14">Expand communication skills and gain confidence in daily situations.</p>
+              </div>
+              <div class="pt-3 mt-3 d-flex align-items-center justify-content-between" style="border-top:1px solid #f1f5f9;">
+                <span class="td_fs_14 td_semibold td_accent_color">Learn More &rarr;</span>
+                <a href="courses-grid-view.html" class="td_iconbox_btn td_center">
+                  <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 6L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 11C12 11 17 7.31756 17 5.99996C17 4.68237 12 1 12 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                  
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- B1 -->
+          <div class="col-xl-3 col-lg-6 col-sm-6">
+            <div class="td_iconbox td_style_6 td_radius_10 h-100 d-flex flex-column justify-content-between p-4" style="background:#ffffff; border:1px solid #e2e8f0;">
+              <div>
+                <div class="d-flex align-items-center justify-content-between td_mb_15">
+                  <span class="td_fs_32 td_bold td_accent_color">B1</span>
+                  <span class="badge py-1 px-3 td_radius_30 td_fs_12" style="background: rgba(0,102,153,0.1); color: #006699; font-weight: 600;">3 Months</span>
+                </div>
+                <h3 class="td_iconbox_title td_fs_20 td_semibold td_mb_8">Intermediate German</h3>
+                <p class="td_iconbox_subtitle td_heading_color td_opacity_7 mb-0 td_fs_14">Develop language skills for work, study, and life in German-speaking countries.</p>
+              </div>
+              <div class="pt-3 mt-3 d-flex align-items-center justify-content-between" style="border-top:1px solid #f1f5f9;">
+                <span class="td_fs_14 td_semibold td_accent_color">Learn More &rarr;</span>
+                <a href="courses-grid-view.html" class="td_iconbox_btn td_center">
+                  <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 6L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 11C12 11 17 7.31756 17 5.99996C17 4.68237 12 1 12 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                  
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- B2 -->
+          <div class="col-xl-3 col-lg-6 col-sm-6">
+            <div class="td_iconbox td_style_6 td_radius_10 h-100 d-flex flex-column justify-content-between p-4" style="background:#ffffff; border:1px solid #e2e8f0;">
+              <div>
+                <div class="d-flex align-items-center justify-content-between td_mb_15">
+                  <span class="td_fs_32 td_bold td_accent_color">B2</span>
+                  <span class="badge py-1 px-3 td_radius_30 td_fs_12" style="background: rgba(0,102,153,0.1); color: #006699; font-weight: 600;">3 Months</span>
+                </div>
+                <h3 class="td_iconbox_title td_fs_20 td_semibold td_mb_8">Advanced German</h3>
+                <p class="td_iconbox_subtitle td_heading_color td_opacity_7 mb-0 td_fs_14">Advanced communication for universities, professional careers, and visa requirements.</p>
+              </div>
+              <div class="pt-3 mt-3 d-flex align-items-center justify-content-between" style="border-top:1px solid #f1f5f9;">
+                <span class="td_fs_14 td_semibold td_accent_color">Learn More &rarr;</span>
+                <a href="courses-grid-view.html " class="td_iconbox_btn td_center">
+                  <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 6L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 11C12 11 17 7.31756 17 5.99996C17 4.68237 12 1 12 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                  
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="td_height_50 td_height_lg_40"></div>
+        
+      </div>
+      <div class="td_height_112 td_height_lg_75"></div>
+    </section>
+    <!-- End Top categories Section -->
+
+    <!-- ==================== 5. ABOUT LEXDEUTSCH & 3. WHY LEARN GERMAN ==================== -->
+    <section id="about">
+      <div class="container">
+        <div class="row align-items-center td_gap_y_40">
+          <div class="col-lg-6 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="td_image_box td_style_6 position-relative">
+              <div class="td_image_box_img_1">
+                <img src="assets/img/lexdeutsch/german_class.jpg" alt="LexDeutsch German Classroom Training" class="td_about_img_1">
+              </div>
+              <div class="td_image_box_img_2">
+                <div class="td_image_box_img_2_in">
+                  <img src="assets/img/lexdeutsch/study_germany.jpg" alt="Students in Germany" class="td_about_img_2">
+                </div>
+              </div>
+              <div class="td_image_box_shape_1 position-absolute"></div>
+              <div class="td_image_box_shape_2 position-absolute">
+                <img src="assets/img/home_5/about_shape_2.svg" alt="">
+              </div>
+              <!-- Floating Trust Badge matching Right Side Content -->
+              
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+            <div class="td_section_heading td_style_1 td_mb_25">
+              <p class="td_section_subtitle_up_2 td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_heading_color td_opacity_6">Language. Knowledge. Future.</p>
+              <h2 class="td_section_title td_fs_48 td_mb_20">About LexDeutsch Academy</h2>
+              <p class="td_section_subtitle td_fs_18 mb-3" style="line-height:1.6;">At LexDeutsch Academy, we believe language is more than grammar—it is the key to education, career opportunities, and global connections.</p>
+              <p class="td_fs_16 td_heading_color td_opacity_8 mb-3" style="line-height:1.7;">Lex comes from the Latin word meaning &ldquo;word&rdquo; or &ldquo;principle,&rdquo; while Deutsch represents German language and cultural heritage. Together, LexDeutsch represents our dedication to structured, principled, and high-quality German education—moving beyond rote memorization to real-world communication.</p>
+              <p class="td_fs_16 td_heading_color td_opacity_8 mb-0" style="line-height:1.7;">We help students, healthcare professionals, and job seekers develop practical German skills through structured, interactive learning tailored for university admissions and career success in Germany.</p>
+            </div>
+
+            <!-- Small visual feature beside it: Our Goal -->
+            
+
+            <!-- Key Highlights (replaces tabs) -->
+            <!-- <ul class="td_list td_style_5 td_mp_0 td_mb_30">
+              <li>
+                <div class="d-flex align-items-center gap-2 td_mb_6">
+                  <img src="assets/img/flags/germany-round.svg" alt="Germany" style="width: 22px; height: 22px; border-radius: 50%;">
+                  <h4 class="td_fs_20 mb-0 td_semibold">Sprache. Wissen. Zukunft.</h4>
+                </div>
+                <p class="td_fs_15 td_heading_color td_opacity_8 mb-0">Learn German and shape your future with practical, confident communication.</p>
+              </li>
+              <li>
+                <div class="d-flex align-items-center gap-2 td_mb_6">
+                  <i class="fa-solid fa-location-dot td_accent_color td_fs_18" style="width: 22px; text-align: center;"></i>
+                  <h4 class="td_fs_20 mb-0 td_semibold">Adoor, Kerala &amp; Global Online</h4>
+                </div>
+                <p class="td_fs_15 td_heading_color td_opacity_8 mb-0">Interactive offline classroom training &amp; live virtual batches with certified mentors.</p>
+              </li>
+              <li>
+                <div class="d-flex align-items-center gap-2 td_mb_6">
+                  <i class="fa-solid fa-award td_accent_color td_fs_18" style="width: 22px; text-align: center;"></i>
+                  <h4 class="td_fs_20 mb-0 td_semibold">Goethe &amp; TELC Exam Standards</h4>
+                </div>
+                <p class="td_fs_15 td_heading_color td_opacity_8 mb-0">Structured CEFR curriculum from A1 to B2 with weekly progress tracking and mock tests.</p>
+              </li>
+            </ul> -->
+
+            <a href="about.html" class="td_btn td_style_1 td_radius_10 td_medium">
+              <span class="td_btn_in td_white_color td_accent_bg">
+                <span>Learn More About Us &rarr;</span>
+                <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.1575 4.34302L3.84375 15.6567" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M15.157 11.4142C15.157 11.4142 16.0887 5.2748 15.157 4.34311C14.2253 3.41142 8.08594 4.34314 8.08594 4.34314" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg> 
+              </span>             
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="td_height_120 td_height_lg_80"></div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- ==================== 6. CORE COMPETENCE / FOUR ESSENTIAL SKILLS ==================== -->
+    <section class="td_shape_section_10" id="courses">
+      <div id="skills"></div>
+      <div class="td_shape_position_1 position-absolute">
+        <img src="assets/img/home_5/course_shape_1.svg" alt="">
+      </div>
+      <div class="td_shape_position_2 position-absolute">
+        <img src="assets/img/home_5/course_shape_2.svg" alt="">
+      </div>
+      <div class="td_height_120 td_height_lg_80"></div>
+      <div class="container">
+        <div class="td_section_heading td_style_1 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+          <p class="td_section_subtitle_up_2 td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_heading_color td_opacity_6">CORE COMPETENCE</p>
+          <h2 class="td_section_title td_fs_48 mb-0">Learn German Through Four Essential Skills</h2>
+          <p class="td_section_subtitle td_fs_18 mb-0 mt-2">A balanced pedagogical approach developing practical fluency across all four essential language competencies</p>
+        </div>
+        <div class="td_height_50 td_height_lg_50"></div>
+        <div class="row td_gap_y_30 td_row_gap_30">
+          <!-- Sprechen -->
+          <div class="col-xl-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="td_card td_style_5 td_type_2">
+              <a href="#contact" class="td_card_thumb">
+                <span class="td_card_thumb_in td_radius_10">
+                  <img src="assets/img/lexdeutsch/german_class.jpg" alt="Sprechen - Speaking German" style="height: 100%; object-fit: cover;">
+                </span>
+                <img src="assets/img/flags/germany-round.svg" alt="German Flag" class="td_card_flag" style="box-shadow: 0 4px 10px rgba(0,0,0,0.25);">
+              </a>
+              <div class="td_card_content">
+                <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
+                  <li>
+                    <img src="assets/img/icons/skill_sprechen.svg" alt="" style="width: 18px; height: 18px;">
+                    <span class="td_opacity_7">Speaking Competence</span>
+                  </li>
+                  <li>
+                    <img src="assets/img/icons/book.svg" alt="">
+                    <span class="td_opacity_7">All CEFR Levels</span>
+                  </li>
+                </ul>
+                <h2 class="td_card_title td_fs_24 td_semibold td_mb_20"><a href="#contact">SPRECHEN — Speaking</a></h2>
+                <div class="td_card_price_wrap td_mb_20">
+                  <span class="td_heading_color td_opacity_7 td_fs_14">Build fluency and confidence through active conversation, pronunciation coaching, and practical everyday dialogue.</span>
+                </div>
+                <div class="td_card_btns_wrap">
+                  <a href="#contact" class="td_card_label td_fs_14 td_white_color td_accent_bg">
+                    <img src="assets/img/icons/skill_sprechen.svg" alt="" style="width: 14px; height: 14px; filter: brightness(0) invert(1);">
+                    Speaking
+                  </a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Hören -->
+          <div class="col-xl-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.35s">
+            <div class="td_card td_style_5 td_type_2">
+              <a href="#contact" class="td_card_thumb">
+                <span class="td_card_thumb_in td_radius_10">
+                  <img src="assets/img/lexdeutsch/german_students.jpg" alt="Hören - Listening German" style="height: 100%; object-fit: cover;">
+                </span>
+                <img src="assets/img/flags/germany-round.svg" alt="German Flag" class="td_card_flag" style="box-shadow: 0 4px 10px rgba(0,0,0,0.25);">
+              </a>
+              <div class="td_card_content">
+                <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
+                  <li>
+                    <img src="assets/img/icons/skill_hoeren.svg" alt="" style="width: 18px; height: 18px;">
+                    <span class="td_opacity_7">Listening Competence</span>
+                  </li>
+                  <li>
+                    <img src="assets/img/icons/book.svg" alt="">
+                    <span class="td_opacity_7">All CEFR Levels</span>
+                  </li>
+                </ul>
+                <h2 class="td_card_title td_fs_24 td_semibold td_mb_20"><a href="#contact">HÖREN — Listening</a></h2>
+                <div class="td_card_price_wrap td_mb_20">
+                  <span class="td_heading_color td_opacity_7 td_fs_14">Improve your understanding of spoken German with authentic audio dialogues, native accents, and listening drills.</span>
+                </div>
+                <div class="td_card_btns_wrap">
+                  <a href="#contact" class="td_card_label td_fs_14 td_white_color td_accent_bg">
+                    <img src="assets/img/icons/skill_hoeren.svg" alt="" style="width: 14px; height: 14px; filter: brightness(0) invert(1);">
+                    Listening
+                  </a>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Lesen -->
+          <div class="col-xl-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+            <div class="td_card td_style_5 td_type_2">
+              <a href="#contact" class="td_card_thumb">
+                <span class="td_card_thumb_in td_radius_10">
+                  <img src="assets/img/lexdeutsch/study_germany.jpg" alt="Lesen - Reading German" style="height: 100%; object-fit: cover;">
+                </span>
+                <img src="assets/img/flags/germany-round.svg" alt="German Flag" class="td_card_flag" style="box-shadow: 0 4px 10px rgba(0,0,0,0.25);">
+              </a>
+              <div class="td_card_content">
+                <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
+                  <li>
+                    <img src="assets/img/icons/skill_lesen.svg" alt="" style="width: 18px; height: 18px;">
+                    <span class="td_opacity_7">Reading Competence</span>
+                  </li>
+                  <li>
+                    <img src="assets/img/icons/book.svg" alt="">
+                    <span class="td_opacity_7">All CEFR Levels</span>
+                  </li>
+                </ul>
+                <h2 class="td_card_title td_fs_24 td_semibold td_mb_20"><a href="#contact">LESEN — Reading</a></h2>
+                <div class="td_card_price_wrap td_mb_20">
+                  <span class="td_heading_color td_opacity_7 td_fs_14">Develop reading comprehension, contextual vocabulary, and analytical skills through practical texts and exam materials.</span>
+                </div>
+                <div class="td_card_btns_wrap">
+                  <a href="#contact" class="td_card_label td_fs_14 td_white_color td_accent_bg">
+                    <img src="assets/img/icons/skill_lesen.svg" alt="" style="width: 14px; height: 14px; filter: brightness(0) invert(1);">
+                    Reading
+                  </a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Schreiben -->
+          <div class="col-xl-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.45s">
+            <div class="td_card td_style_5 td_type_2">
+              <a href="#contact" class="td_card_thumb">
+                <span class="td_card_thumb_in td_radius_10">
+                  <img src="assets/img/lexdeutsch/german_nurse.jpg" alt="Schreiben - Writing German" style="height: 100%; object-fit: cover;">
+                </span>
+                <img src="assets/img/flags/germany-round.svg" alt="German Flag" class="td_card_flag" style="box-shadow: 0 4px 10px rgba(0,0,0,0.25);">
+              </a>
+              <div class="td_card_content">
+                <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
+                  <li>
+                    <img src="assets/img/icons/skill_schreiben.svg" alt="" style="width: 18px; height: 18px;">
+                    <span class="td_opacity_7">Writing Competence</span>
+                  </li>
+                  <li>
+                    <img src="assets/img/icons/book.svg" alt="">
+                    <span class="td_opacity_7">All CEFR Levels</span>
+                  </li>
+                </ul>
+                <h2 class="td_card_title td_fs_24 td_semibold td_mb_20"><a href="#contact">SCHREIBEN — Writing</a></h2>
+                <div class="td_card_price_wrap td_mb_20">
+                  <span class="td_heading_color td_opacity_7 td_fs_14">Build confidence in written communication, mastering sentence structure, grammar application, formal emails, and exam essays.</span>
+                </div>
+                <div class="td_card_btns_wrap">
+                  <a href="#contact" class="td_card_label td_fs_14 td_white_color td_accent_bg">
+                    <img src="assets/img/icons/skill_schreiben.svg" alt="" style="width: 14px; height: 14px; filter: brightness(0) invert(1);">
+                    Writing
+                  </a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="td_height_50 td_height_lg_40"></div>
+        
+      </div>
+      <div class="td_height_120 td_height_lg_80"></div>
+    </section>
+    <!-- End Courses Section -->
+
+    <!-- ==================== 8. WHY CHOOSE LEXDEUTSCH ==================== -->
+    <section class="td_shape_section_4 td_hobble td_white_bg position-relative" id="faqs">
+      <div class="td_shape td_shape_position_5 td_hover_layer_3">
+        <img src="assets/img/home_4/faq_shape_5.svg" alt="">
+      </div>
+      <div class="td_shape td_shape_position_6 td_hover_layer_5">
+        <img src="assets/img/home_4/faq_shape_5.svg" alt="">
+      </div>
+      <div class="td_shape td_shape_position_7 td_hover_layer_3">
+        <img src="assets/img/home_4/faq_shape_1.svg" alt="">
+      </div>
+      <div class="td_shape td_shape_position_8 td_hover_layer_5">
+        <img src="assets/img/home_4/faq_shape_2.svg" alt="">
+      </div>
+      <div class="td_height_112 td_height_lg_75"></div>
+      <div class="container position-relative" style="z-index: 2;">
+        <!-- Section Header: Why Learn With LexDeutsch? -->
+        <div class="td_section_heading td_style_1 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+          <div class="d-inline-flex align-items-center gap-2 td_fs_16 text-uppercase td_spacing_1 td_medium td_mb_15 px-3 py-1" style="background: rgba(0,102,153,0.08); border-radius: 30px; border: 1px solid rgba(0,102,153,0.15);">
+            <img src="assets/img/flags/germany-round.svg" alt="Germany" style="width: 20px; height: 20px; border-radius: 50%;">
+            <span style="color: #006699; font-weight: 600;">WHY LEARN WITH LEXDEUTSCH?</span>
+          </div>
+          <h2 class="td_section_title td_fs_48 td_mb_20">Why Choose LexDeutsch?</h2>
+          <p class="td_section_subtitle td_fs_18 mb-0" style="max-width: 840px; margin: 0 auto;">Combining authentic European CEFR methodology with student-centered mentoring in Adoor, Kerala and live interactive classrooms worldwide.</p>
+        </div>
+
+        <div class="td_height_50 td_height_lg_40"></div>
+
+        <!-- 10 Points Grid: Why Choose LexDeutsch -->
+        <div class="row g-3 g-md-4 wow fadeInUp td_mb_50" data-wow-duration="1s" data-wow-delay="0.25s">
+          <!-- 1. Certified and Experienced Trainers -->
+          <div class="col-md-6">
+            <div class="p-3 p-md-4 td_radius_10 td_white_bg h-100 td_why_card d-flex align-items-start gap-3" style="border: 1px solid #e2e8f0;">
+              <div class="td_check_icon td_center td_radius_8 flex-shrink-0" style="width: 42px; height: 42px; background: rgba(0,102,153,0.08); color: #006699; font-size: 17px; border: 1px solid rgba(0,102,153,0.15);">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div>
+                <h4 class="td_fs_18 td_semibold td_mb_6">Certified and Experienced Trainers</h4>
+                <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Learn with qualified instructors utilizing structured, authentic European CEFR teaching methods.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Small Batch Sizes for Personal Attention -->
+          <div class="col-md-6">
+            <div class="p-3 p-md-4 td_radius_10 td_white_bg h-100 td_why_card d-flex align-items-start gap-3" style="border: 1px solid #e2e8f0;">
+              <div class="td_check_icon td_center td_radius_8 flex-shrink-0" style="width: 42px; height: 42px; background: rgba(0,102,153,0.08); color: #006699; font-size: 17px; border: 1px solid rgba(0,102,153,0.15);">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div>
+                <h4 class="td_fs_18 td_semibold td_mb_6">Small Batch Sizes for Personal Attention</h4>
+                <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Limited student batches ensure individualized mentoring, active participation, and speaking focus.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Interactive Online & Offline Classes -->
+          <div class="col-md-6">
+            <div class="p-3 p-md-4 td_radius_10 td_white_bg h-100 td_why_card d-flex align-items-start gap-3" style="border: 1px solid #e2e8f0;">
+              <div class="td_check_icon td_center td_radius_8 flex-shrink-0" style="width: 42px; height: 42px; background: rgba(0,102,153,0.08); color: #006699; font-size: 17px; border: 1px solid rgba(0,102,153,0.15);">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div>
+                <h4 class="td_fs_18 td_semibold td_mb_6">Interactive Online &amp; Offline Classes</h4>
+                <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Flexible learning modes featuring live interactive virtual classrooms and immersive offline classes in Adoor, Kerala.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Flexible Timings -->
+          <div class="col-md-6">
+            <div class="p-3 p-md-4 td_radius_10 td_white_bg h-100 td_why_card d-flex align-items-start gap-3" style="border: 1px solid #e2e8f0;">
+              <div class="td_check_icon td_center td_radius_8 flex-shrink-0" style="width: 42px; height: 42px; background: rgba(0,102,153,0.08); color: #006699; font-size: 17px; border: 1px solid rgba(0,102,153,0.15);">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div>
+                <h4 class="td_fs_18 td_semibold td_mb_6">Flexible Timings</h4>
+                <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Convenient morning, evening, and weekend batches designed to accommodate students and working professionals.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Regular Assessments and Mock Exams -->
+          <div class="col-md-6">
+            <div class="p-3 p-md-4 td_radius_10 td_white_bg h-100 td_why_card d-flex align-items-start gap-3" style="border: 1px solid #e2e8f0;">
+              <div class="td_check_icon td_center td_radius_8 flex-shrink-0" style="width: 42px; height: 42px; background: rgba(0,102,153,0.08); color: #006699; font-size: 17px; border: 1px solid rgba(0,102,153,0.15);">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div>
+                <h4 class="td_fs_18 td_semibold td_mb_6">Regular Assessments and Mock Exams</h4>
+                <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Continuous progress evaluation with regular chapter tests and full-length simulated mock exams.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Exam Preparation Support -->
+          <div class="col-md-6">
+            <div class="p-3 p-md-4 td_radius_10 td_white_bg h-100 td_why_card d-flex align-items-start gap-3" style="border: 1px solid #e2e8f0;">
+              <div class="td_check_icon td_center td_radius_8 flex-shrink-0" style="width: 42px; height: 42px; background: rgba(0,102,153,0.08); color: #006699; font-size: 17px; border: 1px solid rgba(0,102,153,0.15);">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div>
+                <h4 class="td_fs_18 td_semibold td_mb_6">Exam Preparation Support</h4>
+                <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Dedicated training and strategy sessions specifically targeted for Goethe-Zertifikat and TELC examinations.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Study Materials Included -->
+          <div class="col-md-6">
+            <div class="p-3 p-md-4 td_radius_10 td_white_bg h-100 td_why_card d-flex align-items-start gap-3" style="border: 1px solid #e2e8f0;">
+              <div class="td_check_icon td_center td_radius_8 flex-shrink-0" style="width: 42px; height: 42px; background: rgba(0,102,153,0.08); color: #006699; font-size: 17px; border: 1px solid rgba(0,102,153,0.15);">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div>
+                <h4 class="td_fs_18 td_semibold td_mb_6">Study Materials Included</h4>
+                <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Comprehensive textbooks, vocabulary lists, audio listening exercises, and worksheets provided with enrollment.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. Affordable Course Fees -->
+          <div class="col-md-6">
+            <div class="p-3 p-md-4 td_radius_10 td_white_bg h-100 td_why_card d-flex align-items-start gap-3" style="border: 1px solid #e2e8f0;">
+              <div class="td_check_icon td_center td_radius_8 flex-shrink-0" style="width: 42px; height: 42px; background: rgba(0,102,153,0.08); color: #006699; font-size: 17px; border: 1px solid rgba(0,102,153,0.15);">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div>
+                <h4 class="td_fs_18 td_semibold td_mb_6">Affordable Course Fees</h4>
+                <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Transparent and accessible fee structure delivering European-standard language training without hidden costs.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 9. Career Guidance for Germany -->
+          <div class="col-md-6">
+            <div class="p-3 p-md-4 td_radius_10 td_white_bg h-100 td_why_card d-flex align-items-start gap-3" style="border: 1px solid #e2e8f0;">
+              <div class="td_check_icon td_center td_radius_8 flex-shrink-0" style="width: 42px; height: 42px; background: rgba(0,102,153,0.08); color: #006699; font-size: 17px; border: 1px solid rgba(0,102,153,0.15);">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div>
+                <h4 class="td_fs_18 td_semibold td_mb_6">Career Guidance for Germany</h4>
+                <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Practical guidance aligning your language milestones with German universities, Ausbildung, and job visa pathways.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 10. Student Centered Learning Approach -->
+          <div class="col-md-6">
+            <div class="p-3 p-md-4 td_radius_10 td_white_bg h-100 td_why_card d-flex align-items-start gap-3" style="border: 1px solid #e2e8f0;">
+              <div class="td_check_icon td_center td_radius_8 flex-shrink-0" style="width: 42px; height: 42px; background: rgba(0,102,153,0.08); color: #006699; font-size: 17px; border: 1px solid rgba(0,102,153,0.15);">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div>
+                <h4 class="td_fs_18 td_semibold td_mb_6">Student Centered Learning Approach</h4>
+                <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Empowering, interactive pedagogy focused on eliminating hesitation, building confidence, and conversational mastery.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="td_height_120 td_height_lg_80"></div>
+    </section>
+    <!-- End Why Choose Us Section -->
+
+    <!-- ==================== OUR TEACHING METHOD ==================== -->
+    <section class="td_gray_bg_5 position-relative" id="teaching-method">
+      <div class="td_height_112 td_height_lg_75"></div>
+      <div class="container position-relative" style="z-index: 2;">
+        <div class="td_section_heading td_style_1 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+          <p class="td_section_subtitle_up td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_accent_color">Our Teaching Method</p>
+          <h2 class="td_section_title td_fs_48 mb-0">Our Structured Learning Approach</h2>
+          <p class="td_section_subtitle td_fs_18 td_heading_color td_opacity_7 mb-0 mt-3" style="max-width: 800px; margin: 0 auto;">Our structured learning approach includes:</p>
+        </div>
+        <div class="td_height_50 td_height_lg_50"></div>
+        <div class="row td_gap_y_24 justify-content-center">
+          <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+            <a class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color" href="#contact" style="border: 1px solid #e2e8f0;">
+              <span class="td_iconbox_icon"><img src="assets/img/icons/method_live_classes.svg" alt="Interactive Live Classes"></span>
+              <span class="td_iconbox_title">Interactive Live Classes</span>
+            </a>
+          </div>
+          <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
+            <a class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color" href="#contact" style="border: 1px solid #e2e8f0;">
+              <span class="td_iconbox_icon"><img src="assets/img/icons/method_grammar.svg" alt="Grammar Made Simple"></span>
+              <span class="td_iconbox_title">Grammar Made Simple</span>
+            </a>
+          </div>
+          <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+            <a class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color" href="#contact" style="border: 1px solid #e2e8f0;">
+              <span class="td_iconbox_icon"><img src="assets/img/icons/method_vocabulary.svg" alt="Vocabulary Building"></span>
+              <span class="td_iconbox_title">Vocabulary Building</span>
+            </a>
+          </div>
+          <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.35s">
+            <a class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color" href="#contact" style="border: 1px solid #e2e8f0;">
+              <span class="td_iconbox_icon"><img src="assets/img/icons/skill_sprechen.svg" alt="Daily Speaking Practice"></span>
+              <span class="td_iconbox_title">Daily Speaking Practice</span>
+            </a>
+          </div>
+          <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+            <a class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color" href="#contact" style="border: 1px solid #e2e8f0;">
+              <span class="td_iconbox_icon"><img src="assets/img/icons/skill_hoeren.svg" alt="Listening Exercises"></span>
+              <span class="td_iconbox_title">Listening Exercises</span>
+            </a>
+          </div>
+          <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.45s">
+            <a class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color" href="#contact" style="border: 1px solid #e2e8f0;">
+              <span class="td_iconbox_icon"><img src="assets/img/icons/skill_lesen.svg" alt="Reading Comprehension"></span>
+              <span class="td_iconbox_title">Reading Comprehension</span>
+            </a>
+          </div>
+          <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+            <a class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color" href="#contact" style="border: 1px solid #e2e8f0;">
+              <span class="td_iconbox_icon"><img src="assets/img/icons/skill_schreiben.svg" alt="Writing Practice"></span>
+              <span class="td_iconbox_title">Writing Practice</span>
+            </a>
+          </div>
+          <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.55s">
+            <a class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color" href="#contact" style="border: 1px solid #e2e8f0;">
+              <span class="td_iconbox_icon"><img src="assets/img/icons/method_weekly_tests.svg" alt="Weekly Tests"></span>
+              <span class="td_iconbox_title">Weekly Tests</span>
+            </a>
+          </div>
+          <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+            <a class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color" href="#contact" style="border: 1px solid #e2e8f0;">
+              <span class="td_iconbox_icon"><img src="assets/img/icons/method_mock_exams.svg" alt="Mock Examinations"></span>
+              <span class="td_iconbox_title">Mock Examinations</span>
+            </a>
+          </div>
+          <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.65s">
+            <a class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color" href="#contact" style="border: 1px solid #e2e8f0;">
+              <span class="td_iconbox_icon"><img src="assets/img/icons/method_progress_tracking.svg" alt="Individual Progress Tracking"></span>
+              <span class="td_iconbox_title">Individual Progress Tracking</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="td_height_120 td_height_lg_80"></div>
+    </section>
+
+    <!-- ==================== 7. SPECIALIZED PROGRAMS (PRICING SECTION) ==================== -->
+    <section id="pricing">
+      <div class="td_height_120 td_height_lg_80"></div>
+      <div class="container">
+        <div class="td_section_heading td_style_1 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+          <p class="td_section_subtitle_up_2 td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_heading_color td_opacity_6">SPECIALIZED PROGRAMS</p>
+          <h2 class="td_section_title td_fs_48 mb-0">Go Beyond Language Learning</h2>
+        </div>
+        <div class="td_height_50 td_height_lg_50"></div>
+        <div class="row td_gap_y_30 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.35s">
+          <!-- TELC -->
+          <div class="col-lg-4">
+            <div class="td_pricing td_style_1 td_type_1 td_radius_10 h-100 d-flex flex-column justify-content-between">
+              <div>
+                <div class="td_mb_20 overflow-hidden td_radius_10">
+                  <img src="assets/img/lexdeutsch/study_germany.jpg" alt="TELC Preparation" class="w-100" style="height: 160px; object-fit: cover;">
+                </div>
+                <h2 class="td_pricing_package_name td_fs_24 mb-2">TELC Exam Preparation</h2>
+                <p class="td_heading_color td_opacity_8 td_mb_20">Comprehensive coaching, practice tests, and exam preparation.</p>
+                <div class="td_pricing_in">
+                  <h3 class="td_pricing_title td_fs_22 td_mb_15">What’s Included:</h3>
+                  <ul class="td_pricing_feature td_mp_0 td_medium td_heading_color">
+                    <li><i class="fa-solid fa-check"></i>Comprehensive coaching &amp; practice tests</li>
+                    <li><i class="fa-solid fa-check"></i>Mock exams &amp; scoring strategies</li>
+                    <li><i class="fa-solid fa-check"></i>Speaking &amp; writing mock evaluations</li>
+                    <li><i class="fa-solid fa-check"></i>Supporting learning materials included</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="text-center mt-4">
+                <a href="courses-grid-view.html#specialized" class="td_btn td_style_1 td_radius_10 td_medium w-100">
+                  <span class="td_btn_in td_white_color td_accent_bg">
+                    <span>Explore Program &rarr;</span>
+                  </span>             
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Goethe -->
+          <div class="col-lg-4">
+            <div class="td_pricing td_style_1 td_type_1 td_radius_10 h-100 d-flex flex-column justify-content-between">
+              <div>
+                <div class="td_mb_20 overflow-hidden td_radius_10">
+                  <img src="assets/img/lexdeutsch/berlin_gate.jpg" alt="Goethe Preparation" class="w-100" style="height: 160px; object-fit: cover;">
+                </div>
+                <h2 class="td_pricing_package_name td_fs_24 mb-2">Goethe Exam Preparation</h2>
+                <p class="td_heading_color td_opacity_8 td_mb_20">Mock exams, strategies, and focused Goethe-Zertifikat preparation.</p>
+                <div class="td_pricing_in">
+                  <h3 class="td_pricing_title td_fs_22 td_mb_15">What’s Included:</h3>
+                  <ul class="td_pricing_feature td_mp_0 td_medium td_heading_color">
+                    <li><i class="fa-solid fa-check"></i>A1 to B2 Goethe-Zertifikat prep</li>
+                    <li><i class="fa-solid fa-check"></i>Mock exams &amp; focused strategies</li>
+                    <li><i class="fa-solid fa-check"></i>Individual performance feedback</li>
+                    <li><i class="fa-solid fa-check"></i>Time-management &amp; scoring tactics</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="text-center mt-4">
+                <a href="courses-grid-view.html#specialized" class="td_btn td_style_1 td_radius_10 td_medium w-100">
+                  <span class="td_btn_in td_white_color td_accent_bg">
+                    <span>Explore Program &rarr;</span>
+                  </span>             
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- German for Nurses & Spoken German -->
+          <div class="col-lg-4">
+            <div class="td_pricing td_style_1 td_type_1 td_radius_10 h-100 d-flex flex-column justify-content-between">
+              <div>
+                <div class="td_mb_20 overflow-hidden td_radius_10">
+                  <img src="assets/img/lexdeutsch/german_nurse.jpg" alt="German for Nurses" class="w-100" style="height: 160px; object-fit: cover;">
+                </div>
+                <h2 class="td_pricing_package_name td_fs_24 mb-2">German for Nurses &amp; Healthcare</h2>
+                <p class="td_heading_color td_opacity_8 td_mb_20">Specialized German training for healthcare professionals preparing to work in Germany.</p>
+                <div class="td_pricing_in">
+                  <h3 class="td_pricing_title td_fs_22 td_mb_15">What’s Included:</h3>
+                  <ul class="td_pricing_feature td_mp_0 td_medium td_heading_color">
+                    <li><i class="fa-solid fa-check"></i>Medical terminology &amp; hospital dialogues</li>
+                    <li><i class="fa-solid fa-check"></i>Patient communication &amp; handovers</li>
+                    <li><i class="fa-solid fa-check"></i>Spoken German pronunciation &amp; fluency</li>
+                    <li><i class="fa-solid fa-check"></i>Career guidance for Germany licensure</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="text-center mt-4">
+                <a href="courses-grid-view.html#specialized" class="td_btn td_style_1 td_radius_10 td_medium w-100">
+                  <span class="td_btn_in td_white_color td_accent_bg">
+                    <span>Explore Program &rarr;</span>
+                  </span>             
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="td_height_50 td_height_lg_40"></div>
+        
+      </div>
+      <div class="td_height_120 td_height_lg_80"></div>
+    </section>
+    <!-- End Pricing Section -->
+
+    <!-- ==================== 15. FINAL CTA / ENROLLMENT ==================== -->
+    <div class="td_image_banner td_style_2 td_center td_bg_filed" style="background: linear-gradient(180deg, rgba(0, 34, 68, 0.4) 0%, rgba(0, 34, 68, 0.6) 100%), url('assets/img/lexdeutsch/berlin_gate.jpg') center/cover no-repeat;">
+      <div class="text-center text-white px-3 py-4 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
+        <div class="d-inline-flex align-items-center gap-2 px-3 py-1 mb-2 rounded-pill" style="background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.35);">
+          <img src="assets/img/flags/germany-round.svg" alt="Germany" style="width: 18px; height: 18px; border-radius: 50%;">
+          <span class="text-white td_fs_14 td_semibold text-uppercase" style="letter-spacing: 1px;">Brandenburg Gate, Berlin • Deutschland</span>
+        </div>
+        <p class="td_fs_22 td_bold text-white mb-0" style="text-shadow: 0 2px 8px rgba(0,0,0,0.4);">Your Gateway to Education &amp; Career in Germany</p>
+      </div>
+    </div>
+    <div class="td_contact td_style_1" id="contact">
+      <div class="container">
+        <div class="td_contact_in td_white_bg td_radius_10 td_hobble">
+          <div class="td_height_100 td_height_lg_50"></div>
+          <div class="row align-items-center td_gap_y_30">
+            <div class="col-lg-7 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+              <div class="td_section_heading td_style_1">
+                <p class="td_section_subtitle_up_2 td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_heading_color td_opacity_6">READY TO BEGIN?</p>
+                <h2 class="td_section_title td_fs_48 td_mb_20">Start Your German Journey Today.</h2>
+                <h3 class="td_fs_24 td_accent_color td_semibold td_mb_15">Learn German. Build Your Future.</h3>
+                <p class="td_section_subtitle td_fs_18 mb-4">Whether you are preparing for education, employment, nursing, Ausbildung, professional opportunities, or life in Germany, your journey starts with the right language skills.</p>
+                
+                <h4 class="td_fs_20 td_semibold td_heading_color mb-3">Contact LexDeutsch Academy</h4>
+                <ul class="td_list td_style_5 td_mp_0 td_fs_16 td_heading_color list-unstyled">
+                  <li class="td_mb_8"><i class="fa-solid fa-phone td_accent_color me-2"></i><strong>Phone:</strong> +91 9562 160 437 | +91 9400 789 109</li>
+                  <li class="td_mb_8 d-flex align-items-center gap-2">
+                    <img src="assets/img/flags/germany-round.svg" alt="Germany Flag" style="width: 18px; height: 18px; border-radius: 50%;">
+                    <span><strong>Germany Helpline:</strong> +49 1551 0301 194</span>
+                  </li>
+                  <li class="td_mb_8"><i class="fa-solid fa-location-dot td_accent_color me-2"></i><strong>Location:</strong> Adoor, Kerala</li>
+                  <li><i class="fa-solid fa-envelope td_accent_color me-2"></i><strong>Email:</strong> lexdeutschad26@gmail.com</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-5 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.35s" id="enroll-form-anchor">
+              <div class="td_contact_box td_style_2 td_accent_bg td_radius_10">
+                <h3 class="td_white_color td_fs_22 td_semibold td_mb_25">START YOUR GERMAN JOURNEY</h3>
+                <form action="#">
+                  <div class="td_form_field_3 td_mb_20">      
+                    <input type="text" class="td_white_color" placeholder="Full Name" required>
+                    <label class="td_fs_18 td_semibold td_accent_bg td_white_color">Full Name</label>
+                  </div>
+                  <div class="td_form_field_3 td_mb_20">      
+                    <input type="email" class="td_white_color" placeholder="Email Address" required>
+                    <label class="td_fs_18 td_semibold td_accent_bg td_white_color">Email</label>
+                  </div>
+                  <div class="td_form_field_3 td_mb_20">      
+                    <input type="tel" class="td_white_color" placeholder="+91 9562 160 437" required>
+                    <label class="td_fs_18 td_semibold td_accent_bg td_white_color">Phone</label>
+                  </div>
+                  <div class="mb-3">
+                    <select class="form-select td_radius_8" style="padding: 12px; background: rgba(255,255,255,0.15); color: #fff; border: 1px solid rgba(255,255,255,0.3);">
+                      <option value="A1" style="color:#000;">A1 German Foundation</option>
+                      <option value="A2" style="color:#000;">A2 Elementary German</option>
+                      <option value="B1" style="color:#000;">B1 Intermediate German</option>
+                      <option value="B2" style="color:#000;">B2 Advanced German</option>
+                      <option value="TELC" style="color:#000;">TELC Exam Preparation</option>
+                      <option value="Goethe" style="color:#000;">Goethe Exam Preparation</option>
+                      <option value="Nurses" style="color:#000;">German for Nurses</option>
+                      <option value="Demo" style="color:#000;">Book a Free Demo Class</option>
+                    </select>
+                  </div>
+                  <button type="submit" class="td_btn td_style_1 td_radius_10 td_medium w-100">
+                    <span class="td_btn_in td_accent_color td_white_bg">
+                      <span>ENROLL NOW / BOOK DEMO</span>
+                      <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.1575 4.34302L3.84375 15.6567" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M15.157 11.4142C15.157 11.4142 16.0887 5.2748 15.157 4.34311C14.2253 3.41142 8.08594 4.34314 8.08594 4.34314" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg> 
+                    </span>             
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="td_height_100 td_height_lg_50"></div>
+          <div class="td_contact_shape_1 position-absolute td_hover_layer_3">
+            <img src="assets/img/home_5/contact_shape_1.svg" alt="">
+          </div>
+          <div class="td_contact_shape_2 position-absolute td_hover_layer_5">
+            <img src="assets/img/home_5/contact_shape_2.svg" alt="">
+          </div>
+          <div class="td_contact_shape_3 position-absolute td_hover_layer_3">
+            <img src="assets/img/home_5/contact_shape_3.svg" alt="">
+          </div>
+          <div class="td_contact_shape_4 position-absolute td_hover_layer_5">
+            <img src="assets/img/home_5/contact_shape_4.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Video Block With Contact Section -->
+
+    <!-- ==================== 11. OUR LEARNING METHOD & 12. LEARNING ENVIRONMENT (CAROUSEL SECTION) ==================== -->
+    <section>
+      <div class="td_height_120 td_height_lg_80"></div>
+      <div class="container">
+        <div class="td_slider td_style_1 td_slider_gap_24">
+          <div class="td_section_heading td_style_1 td_type_1 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+            <div class="td_section_heading_left">
+              <p class="td_section_subtitle_up_2 td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_heading_color td_opacity_6">STUDENT ENVIRONMENT</p>
+              <h2 class="td_section_title td_fs_48 mb-0">Campus Life &amp; Learning Environment</h2>
+            </div>
+            <div class="td_section_heading_right">
+              <div class="td_slider_arrows td_style_1 td_type_1">
+                <div class="td_left_arrow td_accent_bg td_radius_10 td_center td_white_color cursor-pointer" role="button" aria-label="Previous Slide">
+                  <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.00194 6.00024L17.002 6.00024" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M6.00191 1C6.00191 1 1.00196 4.68244 1.00195 6.00004C1.00194 7.31763 6.00195 11 6.00195 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>                            
+                </div>
+                <div class="td_right_arrow td_accent_bg td_radius_10 td_center td_white_color cursor-pointer" role="button" aria-label="Next Slide">
+                  <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.002 5.99976L1.00195 5.99976" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M12.002 11C12.002 11 17.0019 7.31756 17.002 5.99996C17.002 4.68237 12.002 1 12.002 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>                               
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="td_height_50 td_height_lg_50"></div>
+          <div class="td_slider_container wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-autoplay="2500" data-loop="1" data-speed="800" data-center="0" data-variable-width="0" data-slides-per-view="responsive" data-xs-slides="1" data-sm-slides="1" data-md-slides="2" data-lg-slides="3" data-add-slides="3">
+            <div class="td_slider_wrapper">
+              <!-- Slide 1: Interactive Live Classes -->
+              <div class="td_slide">
+                <div class="td_post td_style_1 td_type_3 h-100 d-flex flex-column justify-content-between p-3 td_radius_10 td_white_bg" style="border: 1px solid #e2e8f0;">
+                  <div>
+                    <a href="#contact" class="td_post_thumb d-block td_radius_10 overflow-hidden mb-3">
+                      <img src="assets/img/lexdeutsch/german_class.jpg" alt="Interactive Live Classes" style="height: 220px; width: 100%; object-fit: cover;">
+                    </a>
+                    <div class="td_post_info p-0">
+                      <div class="td_post_meta td_fs_14 td_medium td_mb_15">
+                        <span><i class="fa-solid fa-chalkboard-user td_accent_color me-1"></i>Method</span>
+                        <span><i class="fa-solid fa-signal td_accent_color me-1"></i>Live Training</span>
+                      </div>
+                      <h3 class="td_post_title td_fs_22 td_semibold td_mb_12">
+                        <a href="#contact">Interactive Live Classes</a>
+                      </h3>
+                      <p class="td_post_subtitle td_fs_14 td_heading_color td_opacity_7 mb-0" style="line-height: 1.7;">
+                        Engage in live classroom sessions in Adoor, Kerala or virtual training worldwide. Learn with certified mentors through real-time dialogues, exercises, and active speaking practice.
+                      </p>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <!-- Slide 2: German Speaking Zone -->
+              <div class="td_slide">
+                <div class="td_post td_style_1 td_type_3 h-100 d-flex flex-column justify-content-between p-3 td_radius_10 td_white_bg" style="border: 1px solid #e2e8f0;">
+                  <div>
+                    <a href="#contact" class="td_post_thumb d-block td_radius_10 overflow-hidden mb-3">
+                      <img src="assets/img/lexdeutsch/german_students.jpg" alt="German Speaking Zone" style="height: 220px; width: 100%; object-fit: cover;">
+                    </a>
+                    <div class="td_post_info p-0">
+                      <div class="td_post_meta td_fs_14 td_medium td_mb_15">
+                        <span><i class="fa-solid fa-users td_accent_color me-1"></i>Environment</span>
+                        <span><i class="fa-solid fa-comments td_accent_color me-1"></i>Immersion</span>
+                      </div>
+                      <h3 class="td_post_title td_fs_22 td_semibold td_mb_12">
+                        <a href="#contact">German Speaking Zone</a>
+                      </h3>
+                      <p class="td_post_subtitle td_fs_14 td_heading_color td_opacity_7 mb-0" style="line-height: 1.7;">
+                        Step into a supportive German-only speaking environment in class. Overcome hesitation, practice spontaneous conversation, and develop natural fluency from day one.
+                      </p>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <!-- Slide 3: Grammar Made Simple -->
+              <div class="td_slide">
+                <div class="td_post td_style_1 td_type_3 h-100 d-flex flex-column justify-content-between p-3 td_radius_10 td_white_bg" style="border: 1px solid #e2e8f0;">
+                  <div>
+                    <a href="#contact" class="td_post_thumb d-block td_radius_10 overflow-hidden mb-3">
+                      <img src="assets/img/lexdeutsch/study_germany.jpg" alt="Grammar Made Simple" style="height: 220px; width: 100%; object-fit: cover;">
+                    </a>
+                    <div class="td_post_info p-0">
+                      <div class="td_post_meta td_fs_14 td_medium td_mb_15">
+                        <span><i class="fa-solid fa-brain td_accent_color me-1"></i>Pedagogy</span>
+                        <span><i class="fa-solid fa-puzzle-piece td_accent_color me-1"></i>A1 – B2 Rules</span>
+                      </div>
+                      <h3 class="td_post_title td_fs_22 td_semibold td_mb_12">
+                        <a href="#contact">Grammar Made Simple</a>
+                      </h3>
+                      <p class="td_post_subtitle td_fs_14 td_heading_color td_opacity_7 mb-0" style="line-height: 1.7;">
+                        Understand German grammar through intuitive, structured explanations. Master sentence structures, verb positions, cases, and prepositions with practical everyday examples.
+                      </p>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <!-- Slide 4: Conversation Tables & Role-Play -->
+              <div class="td_slide">
+                <div class="td_post td_style_1 td_type_3 h-100 d-flex flex-column justify-content-between p-3 td_radius_10 td_white_bg" style="border: 1px solid #e2e8f0;">
+                  <div>
+                    <a href="#contact" class="td_post_thumb d-block td_radius_10 overflow-hidden mb-3">
+                      <img src="assets/img/lexdeutsch/german_nurse.jpg" alt="Conversation Tables & Role-Play" style="height: 220px; width: 100%; object-fit: cover;">
+                    </a>
+                    <div class="td_post_info p-0">
+                      <div class="td_post_meta td_fs_14 td_medium td_mb_15">
+                        <span><i class="fa-solid fa-handshake td_accent_color me-1"></i>Interaction</span>
+                        <span><i class="fa-solid fa-masks-theater td_accent_color me-1"></i>Role-Play</span>
+                      </div>
+                      <h3 class="td_post_title td_fs_22 td_semibold td_mb_12">
+                        <a href="#contact">Conversation &amp; Role-Play</a>
+                      </h3>
+                      <p class="td_post_subtitle td_fs_14 td_heading_color td_opacity_7 mb-0" style="line-height: 1.7;">
+                        Practice German through guided group dialogues and simulations. Rehearse real scenarios including job interviews, doctor visits, hospital communication, and everyday life in Germany.
+                      </p>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <!-- Slide 5: Comprehensive Library Resources -->
+              <div class="td_slide">
+                <div class="td_post td_style_1 td_type_3 h-100 d-flex flex-column justify-content-between p-3 td_radius_10 td_white_bg" style="border: 1px solid #e2e8f0;">
+                  <div>
+                    <a href="#contact" class="td_post_thumb d-block td_radius_10 overflow-hidden mb-3">
+                      <img src="assets/img/lexdeutsch/berlin_gate.jpg" alt="Comprehensive Library Resources" style="height: 220px; width: 100%; object-fit: cover;">
+                    </a>
+                    <div class="td_post_info p-0">
+                      <div class="td_post_meta td_fs_14 td_medium td_mb_15">
+                        <span><i class="fa-solid fa-book-bookmark td_accent_color me-1"></i>Library</span>
+                        <span><i class="fa-solid fa-award td_accent_color me-1"></i>Prep Books</span>
+                      </div>
+                      <h3 class="td_post_title td_fs_22 td_semibold td_mb_12">
+                        <a href="#contact">Library &amp; Exam Prep Materials</a>
+                      </h3>
+                      <p class="td_post_subtitle td_fs_14 td_heading_color td_opacity_7 mb-0" style="line-height: 1.7;">
+                        Enjoy complete access to A1–B2 textbooks, official TELC and Goethe exam prep manuals, German dictionaries, magazines, and graded reader storybooks for enrichment.
+                      </p>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <!-- Slide 6: Weekly Tests & Progress Tracking -->
+              <div class="td_slide">
+                <div class="td_post td_style_1 td_type_3 h-100 d-flex flex-column justify-content-between p-3 td_radius_10 td_white_bg" style="border: 1px solid #e2e8f0;">
+                  <div>
+                    <a href="#contact" class="td_post_thumb d-block td_radius_10 overflow-hidden mb-3">
+                      <img src="assets/img/lexdeutsch/german_class.jpg" alt="Weekly Tests & Progress Tracking" style="height: 220px; width: 100%; object-fit: cover;">
+                    </a>
+                    <div class="td_post_info p-0">
+                      <div class="td_post_meta td_fs_14 td_medium td_mb_15">
+                        <span><i class="fa-solid fa-list-check td_accent_color me-1"></i>Assessment</span>
+                        <span><i class="fa-solid fa-chart-line td_accent_color me-1"></i>Tracking</span>
+                      </div>
+                      <h3 class="td_post_title td_fs_22 td_semibold td_mb_12">
+                        <a href="#contact">Weekly Tests &amp; Mock Exams</a>
+                      </h3>
+                      <p class="td_post_subtitle td_fs_14 td_heading_color td_opacity_7 mb-0" style="line-height: 1.7;">
+                        Track your continuous progress with weekly evaluation drills and full-length Goethe and TELC mock exams. Receive detailed mentor analysis on speaking, listening, reading, and writing.
+                      </p>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="td_height_120 td_height_lg_80"></div>
+    </section>
+    <!-- End Blog Section -->
+
+    <!-- ==================== 16. FOOTER ==================== -->
+    <footer class="td_footer td_style_1 td_color_1">
+      <div class="container">
+        <div class="td_footer_row">
+          <div class="td_footer_col">
+            <div class="td_footer_widget">
+              <div class="td_footer_text_widget td_fs_18">
+                <a class="td_site_branding d-inline-block mb-3" href="index.html" style="text-decoration:none;">
+                  <img src="assets/img/Lexdutch Logo.png" alt="LexDeutsch Academy Logo" class="td_footer_logo_img">
+                </a>
+                <p class="td_fs_16 td_white_color td_opacity_9 mb-1"><strong>Sprache. Wissen. Zukunft.</strong></p>
+                <p class="td_fs_15 td_white_color td_opacity_7 mb-4">Learn German. Shape Your Future.</p>
+              </div>
+              <ul class="td_footer_address_widget td_medium td_mp_0">
+                <li><i class="fa-solid fa-location-dot"></i>Adoor, Kerala</li>
+                <li><i class="fa-solid fa-phone-volume"></i><a href="tel:+919562160437">+91 9562 160 437</a></li>
+                <li><i class="fa-solid fa-phone-volume"></i><a href="tel:+919400789109">+91 9400 789 109</a></li>
+                <li><i class="fa-solid fa-phone-volume"></i><a href="tel:+4915510301194"><img src="assets/img/flags/germany-round.svg" alt="Germany" style="width: 14px; height: 14px; vertical-align: middle; margin-right: 6px;">+49 1551 0301 194</a></li>
+                <li><i class="fa-solid fa-envelope"></i><a href="mailto:lexdeutschad26@gmail.com">lexdeutschad26@gmail.com</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="td_footer_col">
+            <div class="td_footer_widget">
+                            <h2 class="td_footer_widget_title td_fs_24 td_white_color td_semibold td_mb_30">Quick Links</h2>
+              <ul class="td_footer_widget_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="courses-grid-view.html">Courses</a></li>
+                <li><a href="about-germany.html">About Germany</a></li>
+                <li><a href="student-corner.html">Student Corner</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="td_footer_col">
+            <div class="td_footer_widget">
+              <h2 class="td_footer_widget_title td_fs_24 td_white_color td_semibold td_mb_30">Courses</h2>
+              <ul class="td_footer_widget_menu">
+                <li><a href="#courses">A1 German</a></li>
+                <li><a href="#courses">A2 German</a></li>
+                <li><a href="#courses">B1 German</a></li>
+                <li><a href="#courses">B2 German</a></li>
+                <li><a href="#pricing">TELC Preparation</a></li>
+                <li><a href="#pricing">Goethe Preparation</a></li>
+                <li><a href="#skills">Spoken German</a></li>
+                <li><a href="#pricing">German for Nurses</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="td_footer_col">
+            <div class="td_footer_widget">
+              <h2 class="td_footer_widget_title td_fs_24 td_white_color td_semibold td_mb_30">Contact</h2>
+              <div class="td_newsletter td_style_1">
+                <p class="td_mb_0 td_opacity_7">Adoor, Kerala<br>+91 9562 160 437 | +91 9400 789 109<br>+49 1551 0301 194<br>lexdeutschad26@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="td_footer_bottom td_fs_18">
+        <div class="container">
+          <div class="td_footer_bottom_in justify-content-center text-center">
+            <p class="td_copyright mb-0 text-center">Designed By <a href="https://cognetz.com/" target="_blank" rel="noopener noreferrer" style="color: #FFCC00; font-weight: 600; text-decoration: underline;">COGNETZ</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer Section -->
+
+    <!-- Start Scroll Up Button -->
+    <div class="td_scrollup">
+      <i class="fa-solid fa-arrow-up"></i>
+    </div>
+    <!-- End Scroll Up Button -->
+
+    <!-- Script -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A Basic Knowledge About Germany | LexDeutsch Academy</title>
+    <meta name="description" content="Discover essential facts about Germany: federal states, geography, economy, education, healthcare, transportation, and culture with LexDeutsch Academy.">
+    <link rel="icon" type="image/png" href="assets/img/Lexdutch Logo.png">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/slick.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+      :root {
+        --primary-blue: #006699;
+        --dark-navy: #002244;
+        --german-gold: #FFCC00;
+        --german-red: #DD0000;
+        --light-bg: #f8fafc;
+        --card-border: #e2e8f0;
+      }
+      .td_germany_hero {
+        background: linear-gradient(135deg, rgba(0, 34, 68, 0.95) 0%, rgba(0, 102, 153, 0.88) 100%), url('assets/img/lexdeutsch/berlin_gate.jpg') center/cover no-repeat;
+        padding: 110px 0 85px;
+        position: relative;
+      }
+      .td_stat_badge {
+        background: rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 12px;
+        padding: 16px 20px;
+        color: #fff;
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+      .td_stat_badge:hover {
+        transform: translateY(-4px);
+        background: rgba(255, 255, 255, 0.18);
+      }
+      .td_info_card {
+        background: #fff;
+        border-radius: 16px;
+        border: 1px solid var(--card-border);
+        box-shadow: 0 4px 20px rgba(0, 34, 68, 0.05);
+        padding: 28px;
+        height: 100%;
+        transition: all 0.3s ease;
+      }
+      .td_info_card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 30px rgba(0, 34, 68, 0.1);
+        border-color: #006699;
+      }
+      .td_state_card {
+        background: #fff;
+        border-radius: 12px;
+        border: 1px solid var(--card-border);
+        padding: 16px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: all 0.25s ease;
+      }
+      .td_state_card:hover {
+        transform: translateY(-3px);
+        border-color: var(--primary-blue);
+        box-shadow: 0 8px 20px rgba(0, 102, 153, 0.08);
+        background: #fcfdfe;
+      }
+      .td_state_num {
+        width: 32px;
+        height: 32px;
+        border-radius: 8px;
+        background: rgba(0, 102, 153, 0.08);
+        color: var(--primary-blue);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 13px;
+        margin-right: 12px;
+      }
+      .td_border_chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 16px;
+        background: #fff;
+        border: 1px solid var(--card-border);
+        border-radius: 30px;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--dark-navy);
+        box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+        transition: all 0.25s ease;
+      }
+      .td_border_chip:hover {
+        background: var(--primary-blue);
+        color: #fff;
+        border-color: var(--primary-blue);
+        transform: translateY(-2px);
+      }
+      .td_brand_badge {
+        background: #fff;
+        border: 1px solid var(--card-border);
+        border-radius: 10px;
+        padding: 12px 20px;
+        font-weight: 700;
+        color: var(--dark-navy);
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        box-shadow: 0 2px 8px rgba(0, 34, 68, 0.04);
+        transition: all 0.25s ease;
+      }
+      .td_brand_badge:hover {
+        transform: translateY(-3px);
+        border-color: var(--primary-blue);
+        box-shadow: 0 8px 18px rgba(0, 102, 153, 0.12);
+        color: var(--primary-blue);
+      }
+      .td_pillar_card {
+        background: #fff;
+        border-radius: 16px;
+        border: 1px solid var(--card-border);
+        padding: 24px;
+        transition: all 0.3s ease;
+      }
+      .td_pillar_card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 14px 30px rgba(0, 34, 68, 0.08);
+        border-color: var(--primary-blue);
+      }
+      .td_feature_item {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 12px;
+      }
+      .td_feature_item i {
+        color: var(--primary-blue);
+        margin-top: 4px;
+        font-size: 16px;
+      }
+      .td_gallery_img {
+        border-radius: 14px;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        height: 240px;
+      }
+      .td_gallery_img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+      }
+      .td_gallery_img:hover img {
+        transform: scale(1.08);
+      }
+      .td_gallery_overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(to top, rgba(0, 34, 68, 0.9) 0%, transparent 100%);
+        padding: 16px;
+        color: #fff;
+      }
+      .td_flag_stripe {
+        height: 4px;
+        background: linear-gradient(90deg, #000 33.3%, #DD0000 33.3%, #DD0000 66.6%, #FFCC00 66.6%);
+        width: 100%;
+        display: block;
+      }
+    </style>
+  </head>
+  <body class="td_theme_2">
+
+    <!-- ==================== Scroll Top Button ==================== -->
+    <div class="td_scrollup"><i class="fa-solid fa-arrow-up"></i></div>
+
+    <!-- ==================== Header Area ==================== -->
+    <div class="td_flag_stripe"></div>
+                    <!-- ==================== Header Area Start ==================== -->
+    <header class="td_site_header td_style_1 td_sticky_header td_medium td_heading_color">
+      <div class="td_main_header">
+        <div class="container">
+          <div class="td_main_header_in">
+            <!-- 1. Logo Only -->
+            <div class="td_main_header_left">
+              <a class="td_site_branding d-flex align-items-center" href="index.html" style="text-decoration:none;">
+                <img src="assets/img/Lexdutch Logo.png" alt="LexDeutsch Academy Logo" class="td_header_logo_img">
+              </a>
+            </div>
+
+            <!-- 2. Navigation Links Only -->
+            <div class="td_main_header_center">
+              <nav class="td_nav">
+                <div class="td_nav_list_wrap">
+                  <div class="td_nav_list_wrap_in">
+                    <ul class="td_nav_list">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="about.html">About Us</a></li>
+                      <li><a href="courses-grid-view.html">Courses</a></li>
+                      <li><a href="about-germany.html" class="td_accent_color">About Germany</a></li>
+                      <li><a href="student-corner.html">Student Corner</a></li>
+                      <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+
+            <!-- 3. Enroll Now Button Only -->
+            <div class="td_main_header_right">
+              <a href="contact.html#enquiry-form" class="td_btn td_style_1 td_radius_10 td_medium td_with_shadow">
+                <span class="td_btn_in td_white_color td_accent_bg">
+                  <span>ENROLL NOW</span>
+                  <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.1575 4.34302L3.84375 15.6567" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15.157 11.4142C15.157 11.4142 16.0887 5.2748 15.157 4.34311C14.2253 3.41142 8.08594 4.34314 8.08594 4.34314" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg> 
+                </span>             
+              </a>
+              <button class="td_mobile_menu_btn d-xl-none" type="button" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Drawer -->
+      <div class="td_mobile_drawer d-xl-none">
+        <ul class="td_mobile_nav_list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="courses-grid-view.html">Courses</a></li>
+          <li><a href="about-germany.html" class="td_accent_color">About Germany</a></li>
+          <li><a href="student-corner.html">Student Corner</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="pt-3 border-top">
+          <p class="td_fs_14 td_bold text-muted mb-2 text-uppercase">German Courses</p>
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            <a href="courses-grid-view.html#levels" class="badge bg-light text-dark border p-2 text-decoration-none">A1 Foundation</a>
+            <a href="courses-grid-view.html#levels" class="badge bg-light text-dark border p-2 text-decoration-none">A2 Elementary</a>
+            <a href="courses-grid-view.html#levels" class="badge bg-light text-dark border p-2 text-decoration-none">B1 Intermediate</a>
+            <a href="courses-grid-view.html#levels" class="badge bg-light text-dark border p-2 text-decoration-none">B2 Advanced</a>
+          </div>
+          <div class="mb-3">
+            <a href="tel:+919562160437" class="text-decoration-none td_heading_color td_bold d-flex align-items-center gap-2">
+              <i class="fa-solid fa-phone td_accent_color"></i> +91 9562 160 437
+            </a>
+          </div>
+          <a href="contact.html#enquiry-form" class="btn btn-primary w-100 py-2 fw-bold text-white" style="background:#006699; border:none;">ENROLL NOW</a>
+        </div>
+      </div>
+    </header>
+    <!-- ==================== Header Area End ==================== -->
+
+    <!-- ==================== Hero Banner Area ==================== -->
+    <section class="td_germany_hero text-white text-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="d-inline-flex align-items-center gap-2 px-3 py-1 mb-3 rounded-pill" style="background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25);">
+              <img src="assets/img/flags/germany-round.svg" alt="Germany" style="width: 20px; height: 20px;">
+              <span class="text-white td_fs_14 td_semibold text-uppercase" style="letter-spacing: 1.5px;">Federal Republic of Germany • Deutschland</span>
+            </div>
+            <h1 class="td_white_color td_fs_52 td_bold mb-3">A basic knowledge About Germany</h1>
+            <p class="td_fs_20 text-white-50 mx-auto mb-4" style="max-width: 820px; line-height: 1.6;">
+              Germany (German: Deutschland) is one of the most influential countries in Europe, known for its strong economy, high-quality education, engineering, healthcare, and rich cultural heritage.
+            </p>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a href="index.html" class="text-white-50">Home</a></li>
+                <li class="breadcrumb-item active text-white" aria-current="page">About Germany</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Quick Stats Bar ==================== -->
+    <section class="py-4" style="background: #002244;">
+      <div class="container">
+        <div class="row g-3">
+          <div class="col-6 col-md-3">
+            <div class="td_stat_badge">
+              <div class="td_fs_32 td_bold text-white">84 Million</div>
+              <div class="td_fs_14 text-white-50">Population</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="td_stat_badge">
+              <div class="td_fs_32 td_bold text-white">357,588 km²</div>
+              <div class="td_fs_14 text-white-50">Total Land Area</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="td_stat_badge">
+              <div class="td_fs_32 td_bold text-white">16 States</div>
+              <div class="td_fs_14 text-white-50">Bundesländer</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="td_stat_badge">
+              <div class="td_fs_32 td_bold text-white">Euro (€)</div>
+              <div class="td_fs_14 text-white-50">Official Currency</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== General Information & Map ==================== -->
+    <section class="py-5" style="background: #f8fafc;">
+      <div class="container py-lg-4">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="td_section_heading td_mb_30">
+              <span class="td_section_subtitle td_accent_color td_fs_14 td_bold text-uppercase d-block td_mb_10">
+                <i class="fa-solid fa-circle-info me-2"></i>Key Facts
+              </span>
+              <h2 class="td_section_title td_fs_38 td_bold td_heading_color mb-3">General Information</h2>
+              <p class="td_section_text td_fs_16 text-muted mb-4">
+                Essential details about the Federal Republic of Germany at a glance.
+              </p>
+            </div>
+
+            <div class="td_info_card">
+              <ul class="list-unstyled mb-0">
+                <li class="py-3 border-bottom d-flex align-items-center justify-content-between">
+                  <span class="text-muted d-flex align-items-center gap-2"><i class="fa-solid fa-landmark text-primary"></i><strong>Official name:</strong></span>
+                  <span class="text-end td_bold td_heading_color">Federal Republic of Germany<br><span class="text-muted td_fs_13">(Bundesrepublik Deutschland)</span></span>
+                </li>
+                <li class="py-3 border-bottom d-flex align-items-center justify-content-between">
+                  <span class="text-muted d-flex align-items-center gap-2"><i class="fa-solid fa-city text-primary"></i><strong>Capital:</strong></span>
+                  <span class="td_bold td_heading_color">Berlin</span>
+                </li>
+                <li class="py-3 border-bottom d-flex align-items-center justify-content-between">
+                  <span class="text-muted d-flex align-items-center gap-2"><i class="fa-solid fa-building-columns text-primary"></i><strong>Largest city:</strong></span>
+                  <span class="td_bold td_heading_color">Berlin</span>
+                </li>
+                <li class="py-3 border-bottom d-flex align-items-center justify-content-between">
+                  <span class="text-muted d-flex align-items-center gap-2"><i class="fa-solid fa-users text-primary"></i><strong>Population:</strong></span>
+                  <span class="td_bold td_heading_color">About 84 million</span>
+                </li>
+                <li class="py-3 border-bottom d-flex align-items-center justify-content-between">
+                  <span class="text-muted d-flex align-items-center gap-2"><i class="fa-solid fa-map text-primary"></i><strong>Area:</strong></span>
+                  <span class="td_bold td_heading_color">357,588 km²</span>
+                </li>
+                <li class="py-3 border-bottom d-flex align-items-center justify-content-between">
+                  <span class="text-muted d-flex align-items-center gap-2"><i class="fa-solid fa-euro-sign text-primary"></i><strong>Currency:</strong></span>
+                  <span class="td_bold td_heading_color">Euro (€)</span>
+                </li>
+                <li class="py-3 border-bottom d-flex align-items-center justify-content-between">
+                  <span class="text-muted d-flex align-items-center gap-2"><i class="fa-solid fa-language text-primary"></i><strong>Official language:</strong></span>
+                  <span class="td_bold td_heading_color">German (Deutsch)</span>
+                </li>
+                <li class="pt-3 d-flex align-items-center justify-content-between">
+                  <span class="text-muted d-flex align-items-center gap-2"><i class="fa-regular fa-clock text-primary"></i><strong>Time Zone:</strong></span>
+                  <span class="text-end td_bold td_heading_color">Central European Time (CET), UTC+1<br><span class="text-muted td_fs_13">(UTC+2 during daylight saving)</span></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="p-4 bg-white rounded-4 border shadow-sm text-center">
+              <h3 class="td_fs_24 td_bold td_heading_color mb-2" style="letter-spacing: 2px;">GERMANY</h3>
+              <p class="td_fs_14 text-muted mb-3">Federal States &amp; Administrative Divisions Map</p>
+              <div class="position-relative rounded-3 overflow-hidden p-2" style="background: #fafcfe;">
+                <img src="assets/img/lexdeutsch/germany/germany_states_map.svg" alt="Map of Germany with 16 Federal States" class="img-fluid" style="max-height: 480px; object-fit: contain;">
+              </div>
+              <div class="mt-3 d-flex flex-wrap justify-content-center gap-2">
+                <span class="badge bg-light text-dark border px-3 py-2"><i class="fa-solid fa-location-dot text-danger me-1"></i> 16 Federal States</span>
+                <span class="badge bg-light text-dark border px-3 py-2"><i class="fa-solid fa-globe text-primary me-1"></i> Central Europe</span>
+                <span class="badge bg-light text-dark border px-3 py-2"><i class="fa-solid fa-building text-success me-1"></i> Capital: Berlin</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Location & Borders ==================== -->
+    <section class="py-5 bg-white border-top border-bottom">
+      <div class="container py-lg-4">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-8">
+            <span class="td_section_subtitle td_accent_color td_fs_14 td_bold text-uppercase d-block td_mb_10">
+              <i class="fa-solid fa-compass me-2"></i>Geographic Position
+            </span>
+            <h2 class="td_section_title td_fs_36 td_bold td_heading_color mb-3">Location &amp; Neighboring Countries</h2>
+            <p class="td_section_text td_fs_18 text-muted">
+              Germany is located in Central Europe and shares borders with:
+            </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-11">
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+              <div class="td_border_chip"><i class="fa-solid fa-arrow-up text-primary"></i> Denmark</div>
+              <div class="td_border_chip"><i class="fa-solid fa-arrow-right text-primary"></i> Poland</div>
+              <div class="td_border_chip"><i class="fa-solid fa-arrow-right text-primary"></i> Czech Republic</div>
+              <div class="td_border_chip"><i class="fa-solid fa-arrow-down text-primary"></i> Austria</div>
+              <div class="td_border_chip"><i class="fa-solid fa-arrow-down text-primary"></i> Switzerland</div>
+              <div class="td_border_chip"><i class="fa-solid fa-arrow-left text-primary"></i> France</div>
+              <div class="td_border_chip"><i class="fa-solid fa-arrow-left text-primary"></i> Luxembourg</div>
+              <div class="td_border_chip"><i class="fa-solid fa-arrow-left text-primary"></i> Belgium</div>
+              <div class="td_border_chip"><i class="fa-solid fa-arrow-left text-primary"></i> Netherlands</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Federal States (Bundesländer) ==================== -->
+    <section class="py-5" style="background: #f8fafc;">
+      <div class="container py-lg-4">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-8">
+            <span class="td_section_subtitle td_accent_color td_fs_14 td_bold text-uppercase d-block td_mb_10">
+              <i class="fa-solid fa-map-location-dot me-2"></i>Administrative Divisions
+            </span>
+            <h2 class="td_section_title td_fs_36 td_bold td_heading_color mb-2">Federal States (Bundesländer)</h2>
+            <p class="td_section_text td_fs_18 text-muted">
+              Germany has <strong>16 federal states (Bundesländer)</strong>, each with its own state government, distinct cultural identity, and capital city.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-3">
+          <!-- 1. Baden-Württemberg -->
+          <div class="col-md-6 col-lg-3">
+            <div class="td_state_card">
+              <div class="d-flex align-items-center">
+                <span class="td_state_num">01</span>
+                <div>
+                  <h4 class="td_fs_16 td_bold td_heading_color mb-0">Baden-Württemberg</h4>
+                  <span class="td_fs_13 text-muted"><i class="fa-solid fa-location-pin text-primary me-1"></i>Capital: <strong>Stuttgart</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Bavaria (Bayern) -->
+          <div class="col-md-6 col-lg-3">
+            <div class="td_state_card">
+              <div class="d-flex align-items-center">
+                <span class="td_state_num">02</span>
+                <div>
+                  <h4 class="td_fs_16 td_bold td_heading_color mb-0">Bavaria (Bayern)</h4>
+                  <span class="td_fs_13 text-muted"><i class="fa-solid fa-location-pin text-primary me-1"></i>Capital: <strong>Munich (München)</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Berlin -->
+          <div class="col-md-6 col-lg-3">
+            <div class="td_state_card">
+              <div class="d-flex align-items-center">
+                <span class="td_state_num">03</span>
+                <div>
+                  <h4 class="td_fs_16 td_bold td_heading_color mb-0">Berlin</h4>
+                  <span class="td_fs_13 text-muted"><i class="fa-solid fa-location-pin text-primary me-1"></i>Capital: <strong>Berlin</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Brandenburg -->
+          <div class="col-md-6 col-lg-3">
+            <div class="td_state_card">
+              <div class="d-flex align-items-center">
+                <span class="td_state_num">04</span>
+                <div>
+                  <h4 class="td_fs_16 td_bold td_heading_color mb-0">Brandenburg</h4>
+                  <span class="td_fs_13 text-muted"><i class="fa-solid fa-location-pin text-primary me-1"></i>Capital: <strong>Potsdam</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Bremen -->
+          <div class="col-md-6 col-lg-3">
+            <div class="td_state_card">
+              <div class="d-flex align-items-center">
+                <span class="td_state_num">05</span>
+                <div>
+                  <h4 class="td_fs_16 td_bold td_heading_color mb-0">Bremen</h4>
+                  <span class="td_fs_13 text-muted"><i class="fa-solid fa-location-pin text-primary me-1"></i>Capital: <strong>Bremen</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Hamburg -->
+          <div class="col-md-6 col-lg-3">
+            <div class="td_state_card">
+              <div class="d-flex align-items-center">
+                <span class="td_state_num">06</span>
+                <div>
+                  <h4 class="td_fs_16 td_bold td_heading_color mb-0">Hamburg</h4>
+                  <span class="td_fs_13 text-muted"><i class="fa-solid fa-location-pin text-primary me-1"></i>Capital: <strong>Hamburg</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Hesse (Hessen) -->
+          <div class="col-md-6 col-lg-3">
+            <div class="td_state_card">
+              <div class="d-flex align-items-center">
+                <span class="td_state_num">07</span>
+                <div>
+                  <h4 class="td_fs_16 td_bold td_heading_color mb-0">Hesse (Hessen)</h4>
+                  <span class="td_fs_13 text-muted"><i class="fa-solid fa-location-pin text-primary me-1"></i>Capital: <strong>Wiesbaden</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. Lower Saxony (Niedersachsen) -->
+          <div class="col-md-6 col-lg-3">
+            <div class="td_state_card">
+              <div class="d-flex align-items-center">
+                <span class="td_state_num">08</span>
+                <div>
+                  <h4 class="td_fs_16 td_bold td_heading_color mb-0">Lower Saxony (Niedersachsen)</h4>
+                  <span class="td_fs_13 text-muted"><i class="fa-solid fa-location-pin text-primary me-1"></i>Capital: <strong>Hanover (Hannover)</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 9. Mecklenburg-Western Pomerania -->
+          <div class="col-md-6 col-lg-3">
+            <div class="td_state_card">
+              <div class="d-flex align-items-center">
+                <span class="td_state_num">09</span>
+                <div>
+                  <h4 class="td_fs_16 td_bold td_heading_color mb-0">Mecklenburg-Western Pomerania</h4>
+                  <span class="td_fs_13 text-muted"><i class="fa-solid fa-location-pin text-primary me-1"></i>Capital: <strong>Schwerin</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 10. North Rhine-Westphalia (NRW) -->
+          <div class="col-md-6 col-lg-3">
+            <div class="td_state_card">
+              <div class="d-flex align-items-center">
+                <span class="td_state_num">10</span>
+                <div>
+                  <h4 class="td_fs_16 td_bold td_heading_color mb-0">North Rhine-Westphalia (NRW)</h4>
+                  <span class="td_fs_13 text-muted"><i class="fa-solid fa-location-pin text-primary me-1"></i>Capital: <strong>Düsseldorf</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 11. Rhineland-Palatinate (Rheinland-Pfalz) -->
+          <div class="col-md-6 col-lg-3">
+            <div class="td_state_card">
+              <div class="d-flex align-items-center">
+                <span class="td_state_num">11</span>
+                <div>
+                  <h4 class="td_fs_16 td_bold td_heading_color mb-0">Rhineland-Palatinate (Rheinland-Pfalz)</h4>
+                  <span class="td_fs_13 text-muted"><i class="fa-solid fa-location-pin text-primary me-1"></i>Capital: <strong>Mainz</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 12. Saarland -->
+          <div class="col-md-6 col-lg-3">
+            <div class="td_state_card">
+              <div class="d-flex align-items-center">
+                <span class="td_state_num">12</span>
+                <div>
+                  <h4 class="td_fs_16 td_bold td_heading_color mb-0">Saarland</h4>
+                  <span class="td_fs_13 text-muted"><i class="fa-solid fa-location-pin text-primary me-1"></i>Capital: <strong>Saarbrücken</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 13. Saxony (Sachsen) -->
+          <div class="col-md-6 col-lg-3">
+            <div class="td_state_card">
+              <div class="d-flex align-items-center">
+                <span class="td_state_num">13</span>
+                <div>
+                  <h4 class="td_fs_16 td_bold td_heading_color mb-0">Saxony (Sachsen)</h4>
+                  <span class="td_fs_13 text-muted"><i class="fa-solid fa-location-pin text-primary me-1"></i>Capital: <strong>Dresden</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 14. Saxony-Anhalt -->
+          <div class="col-md-6 col-lg-3">
+            <div class="td_state_card">
+              <div class="d-flex align-items-center">
+                <span class="td_state_num">14</span>
+                <div>
+                  <h4 class="td_fs_16 td_bold td_heading_color mb-0">Saxony-Anhalt</h4>
+                  <span class="td_fs_13 text-muted"><i class="fa-solid fa-location-pin text-primary me-1"></i>Capital: <strong>Magdeburg</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 15. Schleswig-Holstein -->
+          <div class="col-md-6 col-lg-3">
+            <div class="td_state_card">
+              <div class="d-flex align-items-center">
+                <span class="td_state_num">15</span>
+                <div>
+                  <h4 class="td_fs_16 td_bold td_heading_color mb-0">Schleswig-Holstein</h4>
+                  <span class="td_fs_13 text-muted"><i class="fa-solid fa-location-pin text-primary me-1"></i>Capital: <strong>Kiel</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 16. Thuringia (Thüringen) -->
+          <div class="col-md-6 col-lg-3">
+            <div class="td_state_card">
+              <div class="d-flex align-items-center">
+                <span class="td_state_num">16</span>
+                <div>
+                  <h4 class="td_fs_16 td_bold td_heading_color mb-0">Thuringia (Thüringen)</h4>
+                  <span class="td_fs_13 text-muted"><i class="fa-solid fa-location-pin text-primary me-1"></i>Capital: <strong>Erfurt</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Government & Economy ==================== -->
+    <section class="py-5 bg-white">
+      <div class="container py-lg-4">
+        <div class="row g-5">
+          <!-- Government Section -->
+          <div class="col-lg-5">
+            <div class="td_section_heading td_mb_30">
+              <span class="td_section_subtitle td_accent_color td_fs_14 td_bold text-uppercase d-block td_mb_10">
+                <i class="fa-solid fa-landmark-dome me-2"></i>Political System
+              </span>
+              <h2 class="td_section_title td_fs_34 td_bold td_heading_color mb-3">Government</h2>
+              <p class="td_section_text td_fs_16 text-muted">
+                Germany is a stable, democratic constitutional state grounded in the Basic Law (Grundgesetz).
+              </p>
+            </div>
+
+            <div class="td_info_card p-4">
+              <ul class="list-unstyled mb-0">
+                <li class="py-3 border-bottom">
+                  <span class="text-muted d-block td_fs_13">Type:</span>
+                  <span class="td_bold td_fs_16 td_heading_color">Federal Parliamentary Republic</span>
+                </li>
+                <li class="py-3 border-bottom">
+                  <span class="text-muted d-block td_fs_13">Head of State:</span>
+                  <span class="td_bold td_fs_16 td_heading_color">Federal President <span class="text-muted td_fs_13">(Bundespräsident)</span></span>
+                </li>
+                <li class="py-3 border-bottom">
+                  <span class="text-muted d-block td_fs_13">Head of Government:</span>
+                  <span class="td_bold td_fs_16 td_heading_color">Federal Chancellor <span class="text-muted td_fs_13">(Bundeskanzler)</span></span>
+                </li>
+                <li class="pt-3">
+                  <span class="text-muted d-block td_fs_13">Parliament:</span>
+                  <span class="td_bold td_fs_16 td_heading_color">Bundestag and Bundesrat</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Economy Section -->
+          <div class="col-lg-7">
+            <div class="td_section_heading td_mb_30">
+              <span class="td_section_subtitle td_accent_color td_fs_14 td_bold text-uppercase d-block td_mb_10">
+                <i class="fa-solid fa-chart-line me-2"></i>Industrial Powerhouse
+              </span>
+              <h2 class="td_section_title td_fs_34 td_bold td_heading_color mb-3">Economy</h2>
+              <p class="td_section_text td_fs_16 text-muted mb-4">
+                Germany has Europe’s largest economy and is famous for:
+              </p>
+            </div>
+
+            <div class="row g-3 mb-4">
+              <div class="col-sm-6">
+                <div class="p-3 rounded-3 border bg-light d-flex align-items-center gap-3">
+                  <div class="rounded-circle bg-white text-primary p-2 border shadow-sm"><i class="fa-solid fa-car fs-5"></i></div>
+                  <span class="td_bold td_heading_color td_fs_15">Automobile manufacturing</span>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="p-3 rounded-3 border bg-light d-flex align-items-center gap-3">
+                  <div class="rounded-circle bg-white text-primary p-2 border shadow-sm"><i class="fa-solid fa-gears fs-5"></i></div>
+                  <span class="td_bold td_heading_color td_fs_15">Engineering</span>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="p-3 rounded-3 border bg-light d-flex align-items-center gap-3">
+                  <div class="rounded-circle bg-white text-primary p-2 border shadow-sm"><i class="fa-solid fa-industry fs-5"></i></div>
+                  <span class="td_bold td_heading_color td_fs_15">Machinery</span>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="p-3 rounded-3 border bg-light d-flex align-items-center gap-3">
+                  <div class="rounded-circle bg-white text-primary p-2 border shadow-sm"><i class="fa-solid fa-flask-vial fs-5"></i></div>
+                  <span class="td_bold td_heading_color td_fs_15">Chemical industry</span>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="p-3 rounded-3 border bg-light d-flex align-items-center gap-3">
+                  <div class="rounded-circle bg-white text-primary p-2 border shadow-sm"><i class="fa-solid fa-solar-panel fs-5"></i></div>
+                  <span class="td_bold td_heading_color td_fs_15">Renewable energy</span>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="p-3 rounded-3 border bg-light d-flex align-items-center gap-3">
+                  <div class="rounded-circle bg-white text-primary p-2 border shadow-sm"><i class="fa-solid fa-heart-pulse fs-5"></i></div>
+                  <span class="td_bold td_heading_color td_fs_15">Medical technology</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Well-known German Brands -->
+            <div class="p-4 rounded-4 border bg-white shadow-sm">
+              <h3 class="td_fs_18 td_bold td_heading_color mb-3"><i class="fa-solid fa-award text-warning me-2"></i>Well-known German brands include:</h3>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="td_brand_badge"><i class="fa-solid fa-car text-primary"></i> BMW</span>
+                <span class="td_brand_badge"><i class="fa-solid fa-car-side text-primary"></i> Mercedes-Benz</span>
+                <span class="td_brand_badge"><i class="fa-solid fa-circle-notch text-primary"></i> Audi</span>
+                <span class="td_brand_badge"><i class="fa-solid fa-shield text-primary"></i> Porsche</span>
+                <span class="td_brand_badge"><i class="fa-solid fa-car text-primary"></i> Volkswagen</span>
+                <span class="td_brand_badge"><i class="fa-solid fa-bolt text-primary"></i> Siemens</span>
+                <span class="td_brand_badge"><i class="fa-solid fa-wrench text-primary"></i> Bosch</span>
+                <span class="td_brand_badge"><i class="fa-solid fa-shoe-prints text-primary"></i> Adidas</span>
+                <span class="td_brand_badge"><i class="fa-solid fa-paw text-primary"></i> Puma</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Education, Healthcare & Transportation ==================== -->
+    <section class="py-5" style="background: #f8fafc;">
+      <div class="container py-lg-4">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-8">
+            <span class="td_section_subtitle td_accent_color td_fs_14 td_bold text-uppercase d-block td_mb_10">
+              <i class="fa-solid fa-shield-halved me-2"></i>Living in Germany
+            </span>
+            <h2 class="td_section_title td_fs_36 td_bold td_heading_color mb-2">Education, Healthcare &amp; Transportation</h2>
+            <p class="td_section_text td_fs_18 text-muted">
+              Why millions of international students and professionals choose Germany as their home for learning and career growth.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Education Card -->
+          <div class="col-lg-4">
+            <div class="td_pillar_card h-100">
+              <div class="rounded-3 overflow-hidden mb-4" style="height: 200px;">
+                <img src="assets/img/lexdeutsch/germany/german_education.jpg" alt="German Education" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+              <h3 class="td_fs_24 td_bold td_heading_color mb-3"><i class="fa-solid fa-graduation-cap text-primary me-2"></i>Education</h3>
+              <p class="text-muted td_fs_15 mb-3"><strong>Germany offers:</strong></p>
+              <div class="td_feature_item">
+                <i class="fa-solid fa-check-circle"></i>
+                <span>Free or low-cost public university education</span>
+              </div>
+              <div class="td_feature_item">
+                <i class="fa-solid fa-check-circle"></i>
+                <span>Excellent vocational training (Ausbildung)</span>
+              </div>
+              <div class="td_feature_item">
+                <i class="fa-solid fa-check-circle"></i>
+                <span>World-renowned universities</span>
+              </div>
+              <div class="td_feature_item">
+                <i class="fa-solid fa-check-circle"></i>
+                <span>Opportunities for international students</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Healthcare Card -->
+          <div class="col-lg-4">
+            <div class="td_pillar_card h-100">
+              <div class="rounded-3 overflow-hidden mb-4" style="height: 200px;">
+                <img src="assets/img/lexdeutsch/germany/german_healthcare.jpg" alt="German Healthcare" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+              <h3 class="td_fs_24 td_bold td_heading_color mb-3"><i class="fa-solid fa-stethoscope text-primary me-2"></i>Healthcare</h3>
+              <p class="text-muted td_fs_15 mb-3">
+                Germany has one of the world’s best healthcare systems. Residents usually have:
+              </p>
+              <div class="p-3 rounded-3 bg-light border mb-3">
+                <div class="d-flex align-items-center gap-2 mb-1">
+                  <i class="fa-solid fa-shield-heart text-success"></i>
+                  <strong class="td_heading_color">Public health insurance</strong>
+                </div>
+                <div class="text-muted td_fs_14">(Gesetzliche Krankenversicherung)</div>
+              </div>
+              <div class="p-3 rounded-3 bg-light border">
+                <div class="d-flex align-items-center gap-2 mb-1">
+                  <i class="fa-solid fa-shield-heart text-primary"></i>
+                  <strong class="td_heading_color">Private health insurance</strong>
+                </div>
+                <div class="text-muted td_fs_14">(Private Krankenversicherung)</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Transportation Card -->
+          <div class="col-lg-4">
+            <div class="td_pillar_card h-100">
+              <div class="rounded-3 overflow-hidden mb-4" style="height: 200px;">
+                <img src="assets/img/lexdeutsch/germany/german_train.jpg" alt="German Transportation ICE Train" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+              <h3 class="td_fs_24 td_bold td_heading_color mb-3"><i class="fa-solid fa-train-subway text-primary me-2"></i>Transportation</h3>
+              <p class="text-muted td_fs_15 mb-3"><strong>Germany has an excellent transport network:</strong></p>
+              <div class="td_feature_item">
+                <i class="fa-solid fa-road"></i>
+                <span>Autobahn (many sections have no general speed limit)</span>
+              </div>
+              <div class="td_feature_item">
+                <i class="fa-solid fa-train-subway"></i>
+                <span>High-speed ICE trains</span>
+              </div>
+              <div class="td_feature_item">
+                <i class="fa-solid fa-bus"></i>
+                <span>Extensive regional train and bus services</span>
+              </div>
+              <div class="td_feature_item">
+                <i class="fa-solid fa-plane-departure"></i>
+                <span>International airports in Frankfurt, Munich, Berlin, Düsseldorf, and Hamburg</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Landmarks & Culture Gallery ==================== -->
+    <section class="py-5 bg-white">
+      <div class="container py-lg-4">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-8">
+            <span class="td_section_subtitle td_accent_color td_fs_14 td_bold text-uppercase d-block td_mb_10">
+              <i class="fa-solid fa-camera me-2"></i>Cultural Heritage &amp; Landmarks
+            </span>
+            <h2 class="td_section_title td_fs_36 td_bold td_heading_color mb-2">Discover Iconic German Sights</h2>
+            <p class="td_section_text td_fs_18 text-muted">
+              From fairy-tale Alpine castles to historic monuments, world-famous cathedrals, and futuristic skylines.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="td_gallery_img">
+              <img src="assets/img/lexdeutsch/germany/neuschwanstein.jpg" alt="Neuschwanstein Castle, Bavaria">
+              <div class="td_gallery_overlay">
+                <h4 class="td_fs_18 td_bold text-white mb-0">Neuschwanstein Castle</h4>
+                <span class="td_fs_13 text-white-50">Bavaria (Bayern)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="td_gallery_img">
+              <img src="assets/img/lexdeutsch/germany/cologne_cathedral.jpg" alt="Cologne Cathedral (Kölner Dom)">
+              <div class="td_gallery_overlay">
+                <h4 class="td_fs_18 td_bold text-white mb-0">Cologne Cathedral (Kölner Dom)</h4>
+                <span class="td_fs_13 text-white-50">North Rhine-Westphalia</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="td_gallery_img">
+              <img src="assets/img/lexdeutsch/berlin_gate.jpg" alt="Brandenburg Gate, Berlin">
+              <div class="td_gallery_overlay">
+                <h4 class="td_fs_18 td_bold text-white mb-0">Brandenburg Gate</h4>
+                <span class="td_fs_13 text-white-50">Berlin</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="td_gallery_img">
+              <img src="assets/img/lexdeutsch/germany/berlin_wall.jpg" alt="Berlin Wall East Side Gallery">
+              <div class="td_gallery_overlay">
+                <h4 class="td_fs_18 td_bold text-white mb-0">Berlin Wall (East Side Gallery)</h4>
+                <span class="td_fs_13 text-white-50">Berlin</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="td_gallery_img">
+              <img src="assets/img/lexdeutsch/germany/frankfurt_skyline.jpg" alt="Frankfurt Financial Center">
+              <div class="td_gallery_overlay">
+                <h4 class="td_fs_18 td_bold text-white mb-0">Frankfurt Financial Center</h4>
+                <span class="td_fs_13 text-white-50">Hesse (Hessen)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="td_gallery_img">
+              <img src="assets/img/lexdeutsch/germany/heidelberg.jpg" alt="Heidelberg Castle &amp; Old Bridge">
+              <div class="td_gallery_overlay">
+                <h4 class="td_fs_18 td_bold text-white mb-0">Heidelberg Castle</h4>
+                <span class="td_fs_13 text-white-50">Baden-Württemberg</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Call to Action Banner ==================== -->
+    <section class="py-5" style="background: linear-gradient(135deg, #002244 0%, #006699 100%);">
+      <div class="container py-lg-4">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-9 text-white">
+            <div class="d-inline-flex align-items-center gap-2 px-3 py-1 mb-3 rounded-pill" style="background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25);">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span class="td_fs_13 td_semibold text-uppercase" style="letter-spacing: 1px;">Language. Knowledge. Future.</span>
+            </div>
+            <h2 class="td_fs_44 td_bold text-white mb-3">Ready to Start Your Journey to Germany?</h2>
+            <p class="td_fs_18 text-white-50 mb-4" style="line-height: 1.7;">
+              Whether you are preparing for university studies, Ausbildung vocational training, a healthcare nursing career, or living in Germany, LexDeutsch Academy provides comprehensive German language training from foundation (A1) to advanced level (B2) with dedicated TELC and Goethe exam preparation.
+            </p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+              <a href="courses-grid-view.html" class="td_btn td_style_1 td_radius_10 td_medium" style="background: #fff; color: #002244; font-weight: 700; padding: 14px 32px; text-decoration: none;">
+                EXPLORE COURSES
+              </a>
+              <a href="contact.html" class="td_btn td_style_1 td_radius_10 td_medium" style="background: #ffcc00; color: #002244; font-weight: 700; padding: 14px 32px; text-decoration: none;">
+                BOOK A FREE DEMO CLASS
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Footer Area ==================== -->
+    <footer class="td_footer td_style_1">
+      <div class="container">
+        <div class="td_footer_row">
+          <div class="td_footer_col">
+            <div class="td_footer_widget">
+              <div class="td_footer_text_widget td_fs_18">
+                <a class="td_site_branding d-inline-block mb-3" href="index.html" style="text-decoration:none;">
+                  <img src="assets/img/Lexdutch Logo.png" alt="LexDeutsch Academy Logo" class="td_footer_logo_img">
+                </a>
+                <p>Language. Knowledge. Future. Where Language Opens Doors to Global Opportunities.</p>
+              </div>
+              <ul class="td_footer_address_widget td_medium td_mp_0">
+                <li><i class="fa-solid fa-location-dot"></i>Adoor, Kerala</li>
+                <li><i class="fa-solid fa-phone-volume"></i><a href="tel:+919562160437">+91 9562 160 437</a></li>
+                <li><i class="fa-solid fa-phone-volume"></i><a href="tel:+919400789109">+91 9400 789 109</a></li>
+                <li><i class="fa-solid fa-phone-volume"></i><a href="tel:+4915510301194"><img src="assets/img/flags/germany-round.svg" alt="Germany" style="width: 14px; height: 14px; vertical-align: middle; margin-right: 6px;">+49 1551 0301 194</a></li>
+                <li><i class="fa-solid fa-envelope"></i><a href="mailto:lexdeutschad26@gmail.com">lexdeutschad26@gmail.com</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="td_footer_col">
+            <div class="td_footer_widget">
+                            <h2 class="td_footer_widget_title td_fs_24 td_white_color td_semibold td_mb_30">Quick Links</h2>
+              <ul class="td_footer_widget_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="courses-grid-view.html">Courses</a></li>
+                <li><a href="about-germany.html">About Germany</a></li>
+                <li><a href="student-corner.html">Student Corner</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="td_footer_col">
+            <div class="td_footer_widget">
+              <h2 class="td_footer_widget_title td_fs_24 td_white_color td_semibold td_mb_30">Programs</h2>
+              <ul class="td_footer_widget_menu">
+                <li><a href="courses-grid-view.html#levels">A1 – German Foundation</a></li>
+                <li><a href="courses-grid-view.html#levels">A2 – Elementary German</a></li>
+                <li><a href="courses-grid-view.html#levels">B1 – Intermediate German</a></li>
+                <li><a href="courses-grid-view.html#levels">B2 – Advanced German</a></li>
+                <li><a href="courses-grid-view.html#specialized">TELC Exam Preparation</a></li>
+                <li><a href="courses-grid-view.html#specialized">Goethe Exam Preparation</a></li>
+                <li><a href="courses-grid-view.html#specialized">German for Healthcare</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="td_footer_col">
+            <div class="td_footer_widget">
+              <h2 class="td_footer_widget_title td_fs_24 td_white_color td_semibold td_mb_30">Working Hours</h2>
+              <ul class="td_footer_address_widget td_medium td_mp_0">
+                <li><i class="fa-regular fa-clock"></i>Monday – Friday: 9:00 AM – 6:00 PM</li>
+                <li><i class="fa-regular fa-clock"></i>Saturday: 9:00 AM – 4:00 PM</li>
+                <li><i class="fa-regular fa-calendar-xmark"></i>Sunday: Closed (Online support available)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="td_footer_bottom td_fs_18">
+        <div class="container">
+          <div class="td_footer_bottom_in justify-content-center text-center">
+            <p class="td_copyright mb-0 text-center">Designed By <a href="https://cognetz.com/" target="_blank" rel="noopener noreferrer" style="color: #FFCC00; font-weight: 600; text-decoration: underline;">COGNETZ</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

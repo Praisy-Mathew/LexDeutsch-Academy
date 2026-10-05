@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="LexDeutsch Academy">
+    <title>Student Corner | LexDeutsch Academy • Learn. Practice. Participate. Succeed.</title>
+    <link rel="icon" type="image/png" href="assets/img/Lexdutch Logo.png">
+    <!-- CSS Plugins -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+      :root {
+        --primary-blue: #006699;
+        --dark-navy: #002244;
+        --accent-red: #890c25;
+        --german-gold: #FFCC00;
+        --german-red: #DD0000;
+        --card-border: #e2e8f0;
+      }
+
+      .td_student_hero {
+        background: linear-gradient(135deg, rgba(0, 34, 68, 0.92) 0%, rgba(0, 102, 153, 0.85) 100%), url('assets/img/lexdeutsch/german_students.jpg') center/cover no-repeat !important;
+        position: relative;
+      }
+
+      .td_rule_card {
+        background: #fff;
+        border: 1px solid var(--card-border);
+        border-radius: 14px;
+        padding: 22px 20px;
+        transition: all 0.3s ease;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+      }
+      .td_rule_card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 30px rgba(0, 34, 68, 0.08);
+        border-color: #006699;
+      }
+      .td_rule_icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+        background: rgba(0, 102, 153, 0.08);
+        color: #006699;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        flex-shrink: 0;
+        transition: all 0.3s ease;
+      }
+      .td_rule_card:hover .td_rule_icon {
+        background: #006699;
+        color: #fff;
+      }
+
+      .td_notice_board {
+        background: #ffffff;
+        border: 2px solid #002244;
+        border-radius: 18px;
+        box-shadow: 0 16px 40px rgba(0, 34, 68, 0.08);
+        overflow: hidden;
+      }
+      .td_notice_header {
+        background: linear-gradient(135deg, #002244 0%, #006699 100%);
+        padding: 24px 30px;
+        color: #fff;
+      }
+      .td_notice_grid_card {
+        background: #ffffff;
+        border: 1px solid var(--card-border);
+        border-radius: 16px;
+        padding: 24px;
+        transition: all 0.3s ease;
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+      }
+      .td_notice_grid_card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 16px 36px rgba(0, 34, 68, 0.1);
+        border-color: #006699;
+      }
+      .td_pin_tag {
+        position: absolute;
+        top: 14px;
+        right: 16px;
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        padding: 3px 10px;
+        border-radius: 20px;
+      }
+      .td_notice_item {
+        padding: 16px 20px;
+        border-radius: 12px;
+        background: #f8fafc;
+        border: 1px solid #edf2f7;
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        transition: all 0.25s ease;
+      }
+      .td_notice_item:hover {
+        background: #ffffff;
+        border-color: #006699;
+        box-shadow: 0 6px 18px rgba(0, 102, 153, 0.1);
+        transform: translateX(6px);
+      }
+      .td_notice_badge {
+        width: 46px;
+        height: 46px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        flex-shrink: 0;
+      }
+
+      .td_library_card {
+        background: #fff;
+        border: 1px solid var(--card-border);
+        border-radius: 16px;
+        padding: 24px;
+        transition: all 0.3s ease;
+        height: 100%;
+      }
+      .td_library_card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 16px 36px rgba(0, 34, 68, 0.1);
+        border-color: #006699;
+      }
+
+      .td_speaking_zone_box {
+        background: linear-gradient(135deg, #002244 0%, #004d73 100%);
+        border-radius: 20px;
+        color: #fff;
+        padding: 40px 36px;
+        position: relative;
+        overflow: hidden;
+      }
+      .td_zone_pill {
+        background: rgba(255, 255, 255, 0.12);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 30px;
+        padding: 10px 18px;
+        color: #fff;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 500;
+        font-size: 14.5px;
+        transition: all 0.25s ease;
+      }
+      .td_zone_pill:hover {
+        background: rgba(255, 255, 255, 0.22);
+        transform: translateY(-3px);
+      }
+
+      .td_target_card {
+        background: #fff;
+        border: 1px solid var(--card-border);
+        border-radius: 16px;
+        padding: 26px 22px;
+        text-align: center;
+        transition: all 0.3s ease;
+        height: 100%;
+      }
+      .td_target_card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 16px 36px rgba(0, 34, 68, 0.1);
+        border-color: #006699;
+      }
+
+      .td_target_icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: rgba(0, 102, 153, 0.08);
+        color: #006699;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        margin: 0 auto 16px;
+        transition: all 0.3s ease;
+      }
+      .td_target_card:hover .td_target_icon {
+        background: #006699;
+        color: #fff;
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body class="td_theme_2">
+
+    <!-- ==================== Scroll Top Button Start ==================== -->
+    <div class="td_scrollup"><i class="fa-solid fa-arrow-up"></i></div>
+    <!-- ==================== Scroll Top Button End ==================== -->
+
+    <div class="td_flag_stripe"></div>
+
+    <!-- ==================== Header Area Start ==================== -->
+    <header class="td_site_header td_style_1 td_sticky_header td_medium td_heading_color">
+      <div class="td_main_header">
+        <div class="container">
+          <div class="td_main_header_in">
+            <!-- 1. Logo Only -->
+            <div class="td_main_header_left">
+              <a class="td_site_branding d-flex align-items-center" href="index.html" style="text-decoration:none;">
+                <img src="assets/img/Lexdutch Logo.png" alt="LexDeutsch Academy Logo" class="td_header_logo_img">
+              </a>
+            </div>
+
+            <!-- 2. Navigation Links Only -->
+            <div class="td_main_header_center">
+              <nav class="td_nav">
+                <div class="td_nav_list_wrap">
+                  <div class="td_nav_list_wrap_in">
+                    <ul class="td_nav_list">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="about.html">About Us</a></li>
+                      <li><a href="courses-grid-view.html">Courses</a></li>
+                      <li><a href="about-germany.html">About Germany</a></li>
+                      <li><a href="student-corner.html" class="td_accent_color">Student Corner</a></li>
+                      <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+
+            <!-- 3. Enroll Now Button Only -->
+            <div class="td_main_header_right">
+              <a href="contact.html#enquiry-form" class="td_btn td_style_1 td_radius_10 td_medium td_with_shadow">
+                <span class="td_btn_in td_white_color td_accent_bg">
+                  <span>ENROLL NOW</span>
+                  <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.1575 4.34302L3.84375 15.6567" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15.157 11.4142C15.157 11.4142 16.0887 5.2748 15.157 4.34311C14.2253 3.41142 8.08594 4.34314 8.08594 4.34314" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg> 
+                </span>             
+              </a>
+              <button class="td_mobile_menu_btn d-xl-none" type="button" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Drawer -->
+      <div class="td_mobile_drawer d-xl-none">
+        <ul class="td_mobile_nav_list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="courses-grid-view.html">Courses</a></li>
+          <li><a href="about-germany.html">About Germany</a></li>
+          <li><a href="student-corner.html" class="td_accent_color">Student Corner</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="pt-3 border-top">
+          <p class="td_fs_14 td_bold text-muted mb-2 text-uppercase">German Courses</p>
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            <a href="courses-grid-view.html#levels" class="badge bg-light text-dark border p-2 text-decoration-none">A1 Foundation</a>
+            <a href="courses-grid-view.html#levels" class="badge bg-light text-dark border p-2 text-decoration-none">A2 Elementary</a>
+            <a href="courses-grid-view.html#levels" class="badge bg-light text-dark border p-2 text-decoration-none">B1 Intermediate</a>
+            <a href="courses-grid-view.html#levels" class="badge bg-light text-dark border p-2 text-decoration-none">B2 Advanced</a>
+          </div>
+          <div class="mb-3">
+            <a href="tel:+919562160437" class="text-decoration-none td_heading_color td_bold d-flex align-items-center gap-2">
+              <i class="fa-solid fa-phone td_accent_color"></i> +91 9562 160 437
+            </a>
+          </div>
+          <a href="contact.html#enquiry-form" class="btn btn-primary w-100 py-2 fw-bold text-white" style="background:#006699; border:none;">ENROLL NOW</a>
+        </div>
+      </div>
+    </header>
+    <!-- ==================== Header Area End ==================== -->
+
+    <!-- ==================== Hero Banner Area ==================== -->
+    <section class="td_page_heading td_student_hero td_center td_bg_filed text-center td_hobble">
+      <div class="container">
+        <div class="td_page_heading_in">
+          <div class="d-inline-flex align-items-center gap-2 td_fs_14 text-uppercase td_semibold mb-3 px-3 py-1" style="background: rgba(255,255,255,0.15); border-radius: 20px; color: #fff;">
+            <img src="assets/img/flags/germany-round.svg" alt="Germany" style="width: 18px; height: 18px; border-radius: 50%;">
+            <span>STUDENT CORNER • LEXDEUTSCH ACADEMY</span>
+          </div>
+          <h1 class="td_white_color td_fs_52 td_bold td_mb_10">Student Corner</h1>
+          <p class="td_white_color td_opacity_9 td_fs_24 td_medium mb-3">Learn. Practice. Participate. Succeed.</p>
+          <p class="text-white-50 td_fs_18 mx-auto mb-4" style="max-width: 820px; line-height: 1.6;">
+            A dedicated space designed to support your German learning journey inside and outside the classroom.
+          </p>
+          <ol class="breadcrumb m-0 td_fs_18 td_opacity_8 td_semibold td_white_color justify-content-center">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active text-white">Student Corner</li>
+          </ol>
+        </div>
+      </div>
+      <div class="td_page_heading_shape_1 position-absolute td_hover_layer_3"></div>
+      <div class="td_page_heading_shape_2 position-absolute td_hover_layer_5"></div>
+      <div class="td_page_heading_shape_3 position-absolute"><img src="assets/img/others/page_heading_shape_3.svg" alt="Decorative shape 3"></div>
+      <div class="td_page_heading_shape_4 position-absolute"><img src="assets/img/others/page_heading_shape_4.svg" alt="Decorative shape 4"></div>
+      <div class="td_page_heading_shape_5 position-absolute"><img src="assets/img/others/page_heading_shape_5.svg" alt="Decorative shape 5"></div>
+      <div class="td_page_heading_shape_6 position-absolute td_hover_layer_3"></div>
+    </section>
+    <!-- ==================== Hero Banner Area End ==================== -->
+
+    <!-- ==================== WELCOME INTRO ==================== -->
+    <section class="td_white_bg">
+      <div class="td_height_110 td_height_lg_70"></div>
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+            <div class="td_section_heading td_style_1">
+              <p class="td_section_subtitle_up td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_accent_color">Welcome Learners</p>
+              <h2 class="td_section_title td_fs_42 mb-3">Welcome to the LexDeutsch Academy Student Corner</h2>
+              <div class="p-3 td_radius_10 td_mb_20" style="background: rgba(0, 102, 153, 0.06); border-left: 4px solid var(--accent-color);">
+                <p class="td_fs_17 td_heading_color td_medium mb-0" style="line-height: 1.6;">
+                  A dedicated space designed to support your German learning journey inside and outside the classroom.
+                </p>
+              </div>
+              <p class="td_section_subtitle td_fs_17 mb-4" style="line-height: 1.7;">
+                From daily vocabulary and speaking practice to exam preparation and cultural activities, students have access to a supportive learning environment that encourages confidence, participation, and continuous improvement.
+              </p>
+              <div class="d-flex align-items-center gap-3 flex-wrap">
+                <a href="#speaking-zone" class="td_btn td_style_1 td_radius_10 td_medium">
+                  <span class="td_btn_in td_white_color td_accent_bg">
+                    <span>Explore Speaking Zone</span>
+                  </span>
+                </a>
+                <a href="#notice-board" class="td_btn td_style_2 td_radius_10 td_medium" style="border: 2px solid #006699; color: #006699; padding: 12px 24px;">
+                  <span>View Notice Board</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="position-relative">
+              <img src="assets/img/lexdeutsch/german_class.jpg" alt="LexDeutsch German Classroom" class="img-fluid rounded-4 shadow-lg w-100" style="object-fit: cover; max-height: 420px; border: 5px solid #fff;">
+              <div class="position-absolute bottom-0 start-0 m-3 p-3 rounded-3 text-white" style="background: rgba(0, 34, 68, 0.9); backdrop-filter: blur(6px); max-width: 280px;">
+                <p class="td_fs_14 td_bold text-uppercase mb-1" style="color: #FFCC00;">Active Learning</p>
+                <p class="td_fs_13 mb-0 text-white-50">Less hesitation, more German. Interactive speaking every single day.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="td_height_100 td_height_lg_70"></div>
+    </section>
+
+    <!-- ==================== 1. CLASSROOM RULES ==================== -->
+    <section class="td_gray_bg_5" id="rules">
+      <div class="td_height_110 td_height_lg_70"></div>
+      <div class="container">
+        <div class="td_section_heading td_style_1 text-center td_mb_50 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+          <p class="td_section_subtitle_up td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_accent_color">Code of Conduct</p>
+          <h2 class="td_section_title td_fs_44 mb-2">Classroom Rules</h2>
+          <p class="td_section_subtitle td_fs_18 td_heading_color td_opacity_7 mb-0" style="max-width: 760px; margin: 0 auto;">
+            A positive classroom environment helps everyone learn better. We encourage our students to adhere to these core principles:
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Rule 1 -->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
+            <div class="td_rule_card">
+              <div class="td_rule_icon"><i class="fa-solid fa-comments"></i></div>
+              <div>
+                <h4 class="td_fs_18 td_semibold mb-1">Speak German as Much as Possible</h4>
+                <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Immerse yourself daily and use newly acquired phrases in class.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Rule 2 -->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.15s">
+            <div class="td_rule_card">
+              <div class="td_rule_icon"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <h4 class="td_fs_18 td_semibold mb-1">Punctual & Regular Attendance</h4>
+                <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Be punctual and attend every session to maintain continuous momentum.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Rule 3 -->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+            <div class="td_rule_card">
+              <div class="td_rule_icon"><i class="fa-solid fa-clipboard-check"></i></div>
+              <div>
+                <h4 class="td_fs_18 td_semibold mb-1">Timely Assignments & Homework</h4>
+                <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Complete assignments and homework on time to solidify classroom lessons.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Rule 4 -->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
+            <div class="td_rule_card">
+              <div class="td_rule_icon"><i class="fa-solid fa-handshake"></i></div>
+              <div>
+                <h4 class="td_fs_18 td_semibold mb-1">Respect Teachers & Classmates</h4>
+                <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Foster a welcoming, supportive, and motivating atmosphere for everyone.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Rule 5 -->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="td_rule_card">
+              <div class="td_rule_icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+              <div>
+                <h4 class="td_fs_18 td_semibold mb-1">Mobile Phones on Silent</h4>
+                <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Keep phones on silent mode during classes to preserve focused attention.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Rule 6 -->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.35s">
+            <div class="td_rule_card">
+              <div class="td_rule_icon"><i class="fa-solid fa-users"></i></div>
+              <div>
+                <h4 class="td_fs_18 td_semibold mb-1">Active Conversation Practice</h4>
+                <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Participate enthusiastically in speaking drills, role-plays, and group talk.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Rule 7 Full width highlight -->
+          <div class="col-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+            <div class="p-3 rounded-3 text-center" style="background: rgba(0, 102, 153, 0.08); border: 1px dashed #006699;">
+              <p class="td_fs_16 td_semibold td_heading_color mb-0">
+                <i class="fa-solid fa-circle-question td_accent_color me-2"></i>
+                <strong>Always Ask Questions:</strong> Actively engage in learning—there are no wrong questions in mastering German!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="td_height_110 td_height_lg_70"></div>
+    </section>
+
+    <!-- ==================== 2. NOTICE BOARD ==================== -->
+    <section class="td_white_bg" id="notice-board">
+      <div class="td_height_110 td_height_lg_70"></div>
+      <div class="container">
+        <!-- Section Header -->
+        <div class="td_section_heading td_style_1 text-center td_mb_50 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+          <p class="td_section_subtitle_up td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_accent_color">Student Information Hub</p>
+          <h2 class="td_section_title td_fs_44 mb-2">Notice Board</h2>
+          <p class="td_section_subtitle td_fs_18 td_heading_color td_opacity_8 mb-0" style="max-width: 780px; margin: 0 auto;">
+            Stay updated with important academic information, schedules, vocabulary feeds, and activities through our student notice board.
+          </p>
+        </div>
+
+        <!-- Priority Flash Announcement Banner -->
+        <div class="p-3 mb-5 rounded-4 d-flex align-items-center justify-content-between flex-wrap gap-3 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s" style="background: linear-gradient(135deg, #002244 0%, #006699 100%); color: #fff; box-shadow: 0 10px 30px rgba(0, 34, 68, 0.12);">
+          <div class="d-flex align-items-center gap-3">
+            <span class="badge bg-danger text-uppercase px-3 py-2 fw-bold" style="letter-spacing: 1px; font-size: 12px;">Notice Alert</span>
+            <p class="mb-0 td_fs_15 text-white">
+              <strong>Check your board daily!</strong> Assignments, mock exam slots, and cultural workshop registrations are refreshed every Monday.
+            </p>
+          </div>
+          <span class="td_fs_13 text-white-50"><i class="fa-solid fa-clock me-1"></i> Updated for Current Batch</span>
+        </div>
+
+        <!-- 7 Notice Board Categorized Cards in a Structured Grid -->
+        <div class="row g-4">
+          <!-- 1. Daily German Vocabulary -->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
+            <div class="td_notice_grid_card">
+              <span class="td_pin_tag bg-primary-subtle text-primary border border-primary-subtle">Daily Feed</span>
+              <div class="td_notice_badge mb-3" style="background:#e0f2fe; color:#0284c7;">
+                <i class="fa-solid fa-book-open"></i>
+              </div>
+              <h4 class="td_fs_19 td_semibold mb-2">📖 Daily German Vocabulary</h4>
+              <p class="td_fs_14 td_heading_color td_opacity_8 flex-grow-1 mb-3" style="line-height: 1.6;">
+                Hand-picked word lists, thematic vocabulary bundles, and idiomatic expressions to enrich your everyday spoken and written German fluency.
+              </p>
+              <div class="pt-3 border-top d-flex align-items-center justify-content-between td_fs_13 text-muted">
+                <span><i class="fa-solid fa-circle-check text-success me-1"></i> A1 to B2 Levels</span>
+                <span class="fw-semibold text-primary">Published Daily</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Grammar Tips -->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.15s">
+            <div class="td_notice_grid_card">
+              <span class="td_pin_tag bg-warning-subtle text-warning-emphasis border border-warning-subtle">Learning Tip</span>
+              <div class="td_notice_badge mb-3" style="background:#fef3c7; color:#d97706;">
+                <i class="fa-solid fa-pen-fancy"></i>
+              </div>
+              <h4 class="td_fs_19 td_semibold mb-2">✏️ Grammar Tips</h4>
+              <p class="td_fs_14 td_heading_color td_opacity_8 flex-grow-1 mb-3" style="line-height: 1.6;">
+                Bite-sized breakdowns for German sentence structures, Kasus (Nominativ, Akkusativ, Dativ, Genitiv), prepositions, and modal verbs.
+              </p>
+              <div class="pt-3 border-top d-flex align-items-center justify-content-between td_fs_13 text-muted">
+                <span><i class="fa-solid fa-lightbulb text-warning me-1"></i> Quick Rules</span>
+                <span class="fw-semibold text-warning-emphasis">Weekly Digest</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Weekly Assignments -->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+            <div class="td_notice_grid_card">
+              <span class="td_pin_tag bg-purple-subtle text-dark border" style="background:#f3e8ff; color:#9333ea;">Academic</span>
+              <div class="td_notice_badge mb-3" style="background:#f3e8ff; color:#9333ea;">
+                <i class="fa-solid fa-file-lines"></i>
+              </div>
+              <h4 class="td_fs_19 td_semibold mb-2">📝 Weekly Assignments</h4>
+              <p class="td_fs_14 td_heading_color td_opacity_8 flex-grow-1 mb-3" style="line-height: 1.6;">
+                Structured homework tasks, listening comprehension exercises, writing worksheets, and reading packs to track personal progression.
+              </p>
+              <div class="pt-3 border-top d-flex align-items-center justify-content-between td_fs_13 text-muted">
+                <span><i class="fa-solid fa-calendar-check text-primary me-1"></i> Due Every Friday</span>
+                <span class="fw-semibold text-dark">Portal / Class</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Upcoming Exams -->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
+            <div class="td_notice_grid_card">
+              <span class="td_pin_tag bg-danger-subtle text-danger border border-danger-subtle">Important</span>
+              <div class="td_notice_badge mb-3" style="background:#fee2e2; color:#dc2626;">
+                <i class="fa-solid fa-calendar-days"></i>
+              </div>
+              <h4 class="td_fs_19 td_semibold mb-2">📅 Upcoming Exams</h4>
+              <p class="td_fs_14 td_heading_color td_opacity_8 flex-grow-1 mb-3" style="line-height: 1.6;">
+                Schedule of internal level assessment tests, full-length mock examinations, and official registration deadlines for TELC & Goethe certificates.
+              </p>
+              <div class="pt-3 border-top d-flex align-items-center justify-content-between td_fs_13 text-muted">
+                <span><i class="fa-solid fa-bullhorn text-danger me-1"></i> TELC & Goethe</span>
+                <span class="fw-semibold text-danger">Exam Calendar</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. German Cultural Events -->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="td_notice_grid_card">
+              <span class="td_pin_tag bg-success-subtle text-success border border-success-subtle">Activities</span>
+              <div class="td_notice_badge mb-3" style="background:#dcfce7; color:#16a34a;">
+                <i class="fa-solid fa-landmark"></i>
+              </div>
+              <h4 class="td_fs_19 td_semibold mb-2">🇩🇪 German Cultural Events</h4>
+              <p class="td_fs_14 td_heading_color td_opacity_8 flex-grow-1 mb-3" style="line-height: 1.6;">
+                German movie nights, Stammtisch conversation get-togethers, Oktoberfest festivities, and interactive workshops on German lifestyle & traditions.
+              </p>
+              <div class="pt-3 border-top d-flex align-items-center justify-content-between td_fs_13 text-muted">
+                <span><i class="fa-solid fa-music text-success me-1"></i> Extra-Curricular</span>
+                <span class="fw-semibold text-success">Monthly Events</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Student Achievements -->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.35s">
+            <div class="td_notice_grid_card">
+              <span class="td_pin_tag bg-warning-subtle text-warning-emphasis border border-warning-subtle">Success</span>
+              <div class="td_notice_badge mb-3" style="background:#fef9c3; color:#ca8a04;">
+                <i class="fa-solid fa-trophy"></i>
+              </div>
+              <h4 class="td_fs_19 td_semibold mb-2">🏆 Student Achievements</h4>
+              <p class="td_fs_14 td_heading_color td_opacity_8 flex-grow-1 mb-3" style="line-height: 1.6;">
+                Spotlight honoring our top exam scorers, certified qualifiers, students securing university admissions, and nurses receiving German job contracts.
+              </p>
+              <div class="pt-3 border-top d-flex align-items-center justify-content-between td_fs_13 text-muted">
+                <span><i class="fa-solid fa-star text-warning me-1"></i> Wall of Fame</span>
+                <span class="fw-semibold text-warning-emphasis">Hall of Honor</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Important Academy Announcements (Full row prominence) -->
+          <div class="col-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+            <div class="p-4 rounded-4 border d-flex align-items-center justify-content-between flex-wrap gap-3" style="background: #f8fafc; border-left: 6px solid #002244 !important;">
+              <div class="d-flex align-items-center gap-3">
+                <div class="td_notice_badge" style="background:#002244; color:#fff;">
+                  <i class="fa-solid fa-bullhorn"></i>
+                </div>
+                <div>
+                  <h4 class="td_fs_20 td_bold mb-1">📢 Important Academy Announcements</h4>
+                  <p class="td_fs_14 td_heading_color td_opacity_8 mb-0">
+                    Official academy notices covering batch timetables, holiday schedules, masterclasses, and guest guidance sessions with German university alumni.
+                  </p>
+                </div>
+              </div>
+              <a href="contact.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                <span class="td_btn_in td_white_color td_accent_bg py-2 px-4 td_fs_14">
+                  <span>Contact Helpdesk</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="td_height_110 td_height_lg_70"></div>
+    </section>
+
+    <!-- ==================== 3. LIBRARY CORNER ==================== -->
+    <section class="td_gray_bg_5" id="library">
+      <div class="td_height_110 td_height_lg_70"></div>
+      <div class="container">
+        <div class="row align-items-center g-5 mb-5">
+          <div class="col-lg-6 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+            <div class="position-relative">
+              <img src="assets/img/lexdeutsch/about_library.jpg" alt="LexDeutsch Library Corner" class="img-fluid rounded-4 shadow-lg w-100" style="object-fit: cover; max-height: 420px; border: 5px solid #fff;">
+              <div class="position-absolute top-0 start-0 m-3 px-3 py-1 rounded-pill text-white td_fs_13 td_semibold" style="background: rgba(0, 102, 153, 0.9);">
+                <i class="fa-solid fa-book-open-reader me-1"></i> Resource Hub
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="td_section_heading td_style_1">
+              <p class="td_section_subtitle_up td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_accent_color">Reading & Research</p>
+              <h2 class="td_section_title td_fs_44 mb-3">Library Corner</h2>
+              <p class="td_section_subtitle td_fs_17 mb-3" style="line-height: 1.7;">
+                Our library corner provides useful resources for students at different levels of German learning.
+              </p>
+              <p class="td_fs_16 td_heading_color td_opacity_8 mb-4" style="line-height: 1.7;">
+                Use the library to improve your vocabulary, reading skills, grammar, and general knowledge of German culture, geography, and life.
+              </p>
+              <div class="p-3 td_radius_10" style="background: rgba(0, 102, 153, 0.06); border-left: 4px solid var(--accent-color);">
+                <p class="td_fs_15 td_bold td_heading_color mb-0">
+                  <i class="fa-solid fa-lightbulb td_accent_color me-2"></i>Study Tip: Spending 20 minutes a day reading German storybooks significantly accelerates your comprehension.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
+            <div class="td_library_card">
+              <div class="td_rule_icon mb-3"><i class="fa-solid fa-book"></i></div>
+              <h4 class="td_fs_18 td_semibold mb-2">A1–B2 Course Books</h4>
+              <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Standard accredited German textbooks, workbooks, and audio exercise discs.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.15s">
+            <div class="td_library_card">
+              <div class="td_rule_icon mb-3"><i class="fa-solid fa-spell-check"></i></div>
+              <h4 class="td_fs_18 td_semibold mb-2">German Dictionaries</h4>
+              <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Bilingual & monolingual reference Duden dictionaries for accurate word usage.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+            <div class="td_library_card">
+              <div class="td_rule_icon mb-3"><i class="fa-solid fa-child-reaching"></i></div>
+              <h4 class="td_fs_18 td_semibold mb-2">Children's Books</h4>
+              <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Illustrated starter books ideal for natural vocabulary building from ground zero.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
+            <div class="td_library_card">
+              <div class="td_rule_icon mb-3"><i class="fa-solid fa-book-bookmark"></i></div>
+              <h4 class="td_fs_18 td_semibold mb-2">German Story Books</h4>
+              <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Graded readers with audio companions to foster smooth reading habits.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="td_library_card">
+              <div class="td_rule_icon mb-3"><i class="fa-solid fa-newspaper"></i></div>
+              <h4 class="td_fs_18 td_semibold mb-2">German Magazines</h4>
+              <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Periodicals, culture journals, and contemporary articles on life in Germany.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.35s">
+            <div class="td_library_card">
+              <div class="td_rule_icon mb-3"><i class="fa-solid fa-certificate"></i></div>
+              <h4 class="td_fs_18 td_semibold mb-2">TELC Prep Books</h4>
+              <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Official mock tests, format guidelines, and audio practice for TELC exams.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+            <div class="td_library_card">
+              <div class="td_rule_icon mb-3"><i class="fa-solid fa-award"></i></div>
+              <h4 class="td_fs_18 td_semibold mb-2">Goethe Prep Books</h4>
+              <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Comprehensive practice modules and past papers for Goethe-Zertifikat success.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.45s">
+            <div class="td_library_card" style="background: linear-gradient(135deg, #002244 0%, #006699 100%); color:#fff;">
+              <div class="td_rule_icon mb-3" style="background:rgba(255,255,255,0.15); color:#FFCC00;"><i class="fa-solid fa-headset"></i></div>
+              <h4 class="td_fs_18 td_semibold mb-2 text-white">Audio & Digital Hub</h4>
+              <p class="td_fs_14 text-white-50 mb-0">Listening stations with native German pronunciation audio and podcasts.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="td_height_110 td_height_lg_70"></div>
+    </section>
+
+    <!-- ==================== 4. GERMAN SPEAKING ZONE ==================== -->
+    <section class="td_white_bg" id="speaking-zone">
+      <div class="td_height_110 td_height_lg_70"></div>
+      <div class="container">
+        <div class="td_speaking_zone_box wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <div class="d-inline-flex align-items-center gap-2 px-3 py-1 mb-3 rounded-pill" style="background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25);">
+                <img src="assets/img/flags/germany-round.svg" alt="Germany" style="width: 18px; height: 18px;">
+                <span class="text-white td_fs_14 td_semibold text-uppercase" style="letter-spacing: 1px;">German-Only Immersion</span>
+              </div>
+              <h2 class="text-white td_fs_44 td_bold mb-2">German Speaking Zone</h2>
+              <p class="td_fs_22 td_medium mb-3" style="color: #FFCC00;">Speak German. Build Confidence.</p>
+              <p class="text-white-50 td_fs_17 mb-4" style="line-height: 1.7;">
+                The German Speaking Zone is a dedicated space where students are encouraged to communicate only in German. The goal is simple: <strong>less hesitation, more German.</strong>
+              </p>
+              <div class="p-3 rounded-3" style="background: rgba(255,255,255,0.08); border-left: 4px solid #FFCC00;">
+                <p class="mb-0 td_fs_15 text-white">
+                  <strong>Our Golden Rule:</strong> German only! Overcoming the fear of making mistakes is the fastest path to natural fluency.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <p class="text-white td_fs_16 td_bold text-uppercase mb-3" style="letter-spacing: 1px;">Natural Practice Channels:</p>
+              <div class="d-flex flex-wrap gap-2">
+                <div class="td_zone_pill"><i class="fa-solid fa-users-between-lines" style="color:#FFCC00;"></i> Conversation tables</div>
+                <div class="td_zone_pill"><i class="fa-solid fa-masks-theater" style="color:#FFCC00;"></i> Role-play activities</div>
+                <div class="td_zone_pill"><i class="fa-solid fa-people-arrows" style="color:#FFCC00;"></i> Pair and group discussions</div>
+                <div class="td_zone_pill"><i class="fa-solid fa-dice" style="color:#FFCC00;"></i> Vocabulary games</div>
+                <div class="td_zone_pill"><i class="fa-solid fa-table-columns" style="color:#FFCC00;"></i> Vocabulary wall</div>
+                <div class="td_zone_pill"><i class="fa-solid fa-radio" style="color:#FFCC00;"></i> Daily German news</div>
+                <div class="td_zone_pill"><i class="fa-solid fa-calendar-day" style="color:#FFCC00;"></i> Word of the Day</div>
+                <div class="td_zone_pill"><i class="fa-solid fa-comments" style="color:#FFCC00;"></i> Everyday conversation practice</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="td_height_110 td_height_lg_70"></div>
+    </section>
+
+    <!-- ==================== 5. WHO CAN JOIN? ==================== -->
+    <section class="td_gray_bg_5" id="who-can-join">
+      <div class="td_height_110 td_height_lg_70"></div>
+      <div class="container">
+        <div class="td_section_heading td_style_1 text-center td_mb_50 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+          <p class="td_section_subtitle_up td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_accent_color">Open to All</p>
+          <h2 class="td_section_title td_fs_44 mb-2">Who Can Join?</h2>
+          <p class="td_section_subtitle td_fs_18 td_heading_color td_opacity_8 mb-0" style="max-width: 760px; margin: 0 auto;">
+            German learning is open to everyone. No previous knowledge is required for the A1 course.
+          </p>
+        </div>
+
+        <div class="row g-4 mb-4">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
+            <div class="td_target_card">
+              <div class="td_target_icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <h4 class="td_fs_20 td_semibold mb-2">Students</h4>
+              <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Aspiring university entrants seeking bachelor's, master's, or PhD programs in Germany.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.15s">
+            <div class="td_target_card">
+              <div class="td_target_icon"><i class="fa-solid fa-user-nurse"></i></div>
+              <h4 class="td_fs_20 td_semibold mb-2">Nurses & Healthcare Professionals</h4>
+              <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Registered nurses and medical staff preparing for clinical practice licensing in Germany.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+            <div class="td_target_card">
+              <div class="td_target_icon"><i class="fa-solid fa-briefcase"></i></div>
+              <h4 class="td_fs_20 td_semibold mb-2">Working Professionals</h4>
+              <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Engineers, IT specialists, and managers advancing their global career prospects.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
+            <div class="td_target_card">
+              <div class="td_target_icon"><i class="fa-solid fa-magnifying-glass-arrow-right"></i></div>
+              <h4 class="td_fs_20 td_semibold mb-2">Job Seekers</h4>
+              <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Skilled individuals preparing for the German Opportunity Card (Chancenkarte).</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="td_target_card">
+              <div class="td_target_icon"><i class="fa-solid fa-passport"></i></div>
+              <h4 class="td_fs_20 td_semibold mb-2">Migrants & Family Reunion</h4>
+              <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Spouses and families fulfilling official A1 / B1 Goethe embassy requirements.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.35s">
+            <div class="td_target_card">
+              <div class="td_target_icon"><i class="fa-solid fa-heart"></i></div>
+              <h4 class="td_fs_20 td_semibold mb-2">Anyone Interested in German</h4>
+              <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Enthusiasts who love the German language, European culture, and personal growth.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-4 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s" style="background: rgba(0, 102, 153, 0.05); border: 2px dashed #006699;">
+          <h4 class="td_fs_22 td_bold td_accent_color mb-2">Zero Prior Knowledge Required for A1</h4>
+          <p class="td_fs_16 td_heading_color td_medium mb-0" style="max-width: 780px; margin: 0 auto;">
+            Whether you are starting from zero or improving your existing German skills, we have a clear, structured learning path for you.
+          </p>
+        </div>
+      </div>
+      <div class="td_height_110 td_height_lg_70"></div>
+    </section>
+
+    <!-- ==================== 6. STUDENT SUCCESS ==================== -->
+    <section class="td_white_bg" id="success">
+      <div class="td_height_110 td_height_lg_70"></div>
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+            <div class="td_section_heading td_style_1">
+              <p class="td_section_subtitle_up td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_accent_color">Empowering Futures</p>
+              <h2 class="td_section_title td_fs_44 mb-2">Student Success</h2>
+              <p class="td_fs_20 td_bold td_accent_color mb-3">Your Progress. Your Confidence. Your Future.</p>
+              <p class="td_section_subtitle td_fs_17 mb-4" style="line-height: 1.7;">
+                At LexDeutsch Academy, our mission is to help every learner develop confidence in German communication and prepare for their future goals.
+              </p>
+              <a href="contact.html#enquiry-form" class="td_btn td_style_1 td_radius_10 td_medium">
+                <span class="td_btn_in td_white_color td_accent_bg">
+                  <span>Start Your Success Story</span>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-7 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="p-3 bg-white rounded-3 border d-flex align-items-center gap-3 shadow-sm">
+                  <span class="td_fs_24">🎓</span>
+                  <div>
+                    <h5 class="td_fs_16 td_semibold mb-0">Higher Education in Germany</h5>
+                    <p class="td_fs_12 text-muted mb-0">Tuition-free universities & colleges</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="p-3 bg-white rounded-3 border d-flex align-items-center gap-3 shadow-sm">
+                  <span class="td_fs_24">💼</span>
+                  <div>
+                    <h5 class="td_fs_16 td_semibold mb-0">Employment Opportunities</h5>
+                    <p class="td_fs_12 text-muted mb-0">EU Blue Card & German job market</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="p-3 bg-white rounded-3 border d-flex align-items-center gap-3 shadow-sm">
+                  <span class="td_fs_24">🏥</span>
+                  <div>
+                    <h5 class="td_fs_16 td_semibold mb-0">Nursing Careers</h5>
+                    <p class="td_fs_12 text-muted mb-0">Anerkennung licensing in hospitals</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="p-3 bg-white rounded-3 border d-flex align-items-center gap-3 shadow-sm">
+                  <span class="td_fs_24">👨‍👩‍👧</span>
+                  <div>
+                    <h5 class="td_fs_16 td_semibold mb-0">Family Reunion</h5>
+                    <p class="td_fs_12 text-muted mb-0">Ehegattennachzug spouse visas</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="p-3 bg-white rounded-3 border d-flex align-items-center gap-3 shadow-sm">
+                  <span class="td_fs_24">🛠️</span>
+                  <div>
+                    <h5 class="td_fs_16 td_semibold mb-0">Ausbildung Programs</h5>
+                    <p class="td_fs_12 text-muted mb-0">Stipend-based dual vocational training</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="p-3 bg-white rounded-3 border d-flex align-items-center gap-3 shadow-sm">
+                  <span class="td_fs_24">✈️</span>
+                  <div>
+                    <h5 class="td_fs_16 td_semibold mb-0">Visa Requirements</h5>
+                    <p class="td_fs_12 text-muted mb-0">German embassy interview readiness</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="p-3 bg-white rounded-3 border d-flex align-items-center gap-3 shadow-sm" style="border-left: 4px solid #006699 !important;">
+                  <span class="td_fs_24">🌍</span>
+                  <div>
+                    <h5 class="td_fs_16 td_semibold mb-0">International Career Growth</h5>
+                    <p class="td_fs_12 text-muted mb-0">Unlocking doors across Germany, Austria, and Switzerland</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="td_height_110 td_height_lg_70"></div>
+    </section>
+
+    <!-- ==================== 7. FLEXIBLE LEARNING & EXAM PREPARATION ==================== -->
+    <section class="td_gray_bg_5" id="learning-options">
+      <div class="td_height_110 td_height_lg_70"></div>
+      <div class="container">
+        <!-- Flexible Learning Options -->
+        <div class="td_section_heading td_style_1 text-center td_mb_50 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+          <p class="td_section_subtitle_up td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_accent_color">Pace & Modes</p>
+          <h2 class="td_section_title td_fs_44 mb-2">Flexible Learning Options</h2>
+          <p class="td_section_subtitle td_fs_18 td_heading_color td_opacity_8 mb-0" style="max-width: 760px; margin: 0 auto;">
+            Most German levels take approximately <strong>8–12 weeks</strong>, depending on the course schedule and individual learning pace.
+          </p>
+        </div>
+
+        <div class="row g-4 mb-5">
+          <div class="col-md-6 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+            <div class="p-4 rounded-4 h-100 border" style="background: #f8fafc; border-top: 5px solid #006699 !important;">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="td_rule_icon" style="background:#e0f2fe; color:#0284c7;"><i class="fa-solid fa-laptop"></i></div>
+                <h3 class="td_fs_24 td_bold mb-0">Online Training</h3>
+              </div>
+              <p class="td_fs_16 td_heading_color td_opacity_8 mb-3" style="line-height: 1.7;">
+                Learn German from anywhere with flexible online classes. Interactive live sessions, digital study materials, and recorded recaps to fit your routine.
+              </p>
+              <ul class="td_mp_0 td_fs_14 td_semibold td_heading_color">
+                <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i>Live interactive video classes</li>
+                <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i>Digital worksheets & exercises</li>
+                <li class="mb-0"><i class="fa-solid fa-check text-success me-2"></i>Flexible morning & evening batches</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="p-4 rounded-4 h-100 border" style="background: #f8fafc; border-top: 5px solid #002244 !important;">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="td_rule_icon" style="background:#fee2e2; color:#dc2626;"><i class="fa-solid fa-chalkboard-user"></i></div>
+                <h3 class="td_fs_24 td_bold mb-0">Classroom Training</h3>
+              </div>
+              <p class="td_fs_16 td_heading_color td_opacity_8 mb-3" style="line-height: 1.7;">
+                Learn in an interactive classroom environment with direct guidance and speaking practice at our modern center in Adoor, Kerala.
+              </p>
+              <ul class="td_mp_0 td_fs_14 td_semibold td_heading_color">
+                <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i>Face-to-face personalized coaching</li>
+                <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i>Full access to Library & Speaking Zone</li>
+                <li class="mb-0"><i class="fa-solid fa-check text-success me-2"></i>Daily peer conversation groups</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Exam Preparation -->
+        <div class="p-5 rounded-4 mt-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" style="background: linear-gradient(135deg, #002244 0%, #006699 100%); color: #fff;">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6">
+              <span class="badge bg-warning text-dark px-3 py-1 text-uppercase fw-bold mb-2">Official Certifications</span>
+              <h3 class="text-white td_fs_38 td_bold mb-2">Exam Preparation</h3>
+              <p class="text-white-50 td_fs_16 mb-4" style="line-height: 1.7;">
+                Prepare with focused support for internationally recognised German language examinations. International certification is awarded by the respective examination bodies, such as TELC or Goethe, after successfully passing their examinations.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <div class="row g-3">
+                <div class="col-12">
+                  <div class="p-3 rounded-3" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.15);">
+                    <h4 class="text-white td_fs_20 td_bold mb-1"><i class="fa-solid fa-file-shield me-2" style="color:#FFCC00;"></i>TELC Preparation</h4>
+                    <p class="text-white-50 td_fs_14 mb-0">Develop the specific language skills, pattern familiarity, and exam techniques required for TELC examinations.</p>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="p-3 rounded-3" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.15);">
+                    <h4 class="text-white td_fs_20 td_bold mb-1"><i class="fa-solid fa-award me-2" style="color:#FFCC00;"></i>Goethe Preparation</h4>
+                    <p class="text-white-50 td_fs_14 mb-0">Prepare for Goethe examinations with structured mock evaluations, past papers, and intensive speaking interview practice.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="td_height_110 td_height_lg_70"></div>
+    </section>
+
+    <!-- ==================== 9. CTA FINAL ==================== -->
+    <section class="td_center td_bg_filed py-5" style="background: linear-gradient(135deg, #002244 0%, #006699 100%);">
+      <div class="container py-4 text-center">
+        <div class="d-inline-flex align-items-center gap-2 px-3 py-1 mb-3 rounded-pill" style="background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25);">
+          <img src="assets/img/flags/germany-round.svg" alt="Germany" style="width: 18px; height: 18px;">
+          <span class="text-white td_fs_14 td_semibold text-uppercase" style="letter-spacing: 1px;">Start Today</span>
+        </div>
+        <h2 class="text-white td_fs_48 td_bold mb-3">Your German Journey Starts Here</h2>
+        <p class="td_fs_22 td_medium mb-4" style="color: #FFCC00;">
+          Learn German. Practice Every Day. Build Your Confidence. Achieve Your Goals.
+        </p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+          <a href="contact.html#enquiry-form" class="td_btn td_style_1 td_radius_10 td_medium">
+            <span class="td_btn_in td_white_color td_accent_bg px-5 py-3 td_fs_18 td_bold">
+              <span>Start Learning Today</span>
+              <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.1575 4.34302L3.84375 15.6567" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.157 11.4142C15.157 11.4142 16.0887 5.2748 15.157 4.34311C14.2253 3.41142 8.08594 4.34314 8.08594 4.34314" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </a>
+          <a href="contact.html" class="td_btn td_style_2 td_radius_10 td_medium" style="background:#fff; border: 2px solid #fff; color: #002244; padding: 14px 32px; font-weight:700;">
+            <span>Book a Free Demo Class</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Footer Area Start ==================== -->
+    <footer class="td_footer td_style_1">
+      <div class="container">
+        <div class="td_footer_row">
+          <div class="td_footer_col">
+            <div class="td_footer_widget">
+              <div class="td_footer_text_widget td_fs_18">
+                <a class="td_site_branding d-inline-block mb-3" href="index.html" style="text-decoration:none;">
+                  <img src="assets/img/Lexdutch Logo.png" alt="LexDeutsch Academy Logo" class="td_footer_logo_img">
+                </a>
+                <p>Language. Knowledge. Future. Where Language Opens Doors to Global Opportunities.</p>
+              </div>
+              <ul class="td_footer_address_widget td_medium td_mp_0">
+                <li><i class="fa-solid fa-location-dot"></i>Adoor, Kerala</li>
+                <li><i class="fa-solid fa-phone-volume"></i><a href="tel:+919562160437">+91 9562 160 437</a></li>
+                <li><i class="fa-solid fa-phone-volume"></i><a href="tel:+919400789109">+91 9400 789 109</a></li>
+                <li><i class="fa-solid fa-phone-volume"></i><a href="tel:+4915510301194"><img src="assets/img/flags/germany-round.svg" alt="Germany" style="width: 14px; height: 14px; vertical-align: middle; margin-right: 6px;">+49 1551 0301 194</a></li>
+                <li><i class="fa-solid fa-envelope"></i><a href="mailto:lexdeutschad26@gmail.com">lexdeutschad26@gmail.com</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="td_footer_col">
+            <div class="td_footer_widget">
+                            <h2 class="td_footer_widget_title td_fs_24 td_white_color td_semibold td_mb_30">Quick Links</h2>
+              <ul class="td_footer_widget_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="courses-grid-view.html">Courses</a></li>
+                <li><a href="about-germany.html">About Germany</a></li>
+                <li><a href="student-corner.html">Student Corner</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="td_footer_col">
+            <div class="td_footer_widget">
+              <h2 class="td_footer_widget_title td_fs_24 td_white_color td_semibold td_mb_30">Courses</h2>
+              <ul class="td_footer_widget_menu">
+                <li><a href="courses-grid-view.html#levels">A1 German Foundation</a></li>
+                <li><a href="courses-grid-view.html#levels">A2 Elementary German</a></li>
+                <li><a href="courses-grid-view.html#levels">B1 Intermediate German</a></li>
+                <li><a href="courses-grid-view.html#levels">B2 Advanced German</a></li>
+                <li><a href="courses-grid-view.html#specialized">TELC Exam Preparation</a></li>
+                <li><a href="courses-grid-view.html#specialized">Goethe Exam Preparation</a></li>
+                <li><a href="courses-grid-view.html#specialized">Daily Speaking Practice</a></li>
+                <li><a href="courses-grid-view.html#specialized">German for Nurses</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="td_footer_col">
+            <div class="td_footer_widget">
+              <h2 class="td_footer_widget_title td_fs_24 td_white_color td_semibold td_mb_30">Contact</h2>
+              <div class="td_newsletter td_style_1">
+                <p class="td_mb_0 td_opacity_7">Adoor, Kerala<br>+91 9562 160 437 | +91 9400 789 109<br>+49 1551 0301 194<br>lexdeutschad26@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="td_footer_bottom td_fs_18">
+        <div class="container">
+          <div class="td_footer_bottom_in justify-content-center text-center">
+            <p class="td_copyright mb-0 text-center">Designed By <a href="https://cognetz.com/" target="_blank" rel="noopener noreferrer" style="color: #FFCC00; font-weight: 600; text-decoration: underline;">COGNETZ</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ==================== Footer Area End ==================== -->
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
