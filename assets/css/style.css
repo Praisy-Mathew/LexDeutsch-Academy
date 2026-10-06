@@ -99,18 +99,32 @@
 ** All Variable
 ----------------------------------------------------------------*/
 :root {
-  --white-color: #fff;
-  --heading-color: #00001b;
-  --body-color: #555;
-  --accent-color: #890c25;
-  --gray-color: #f4f3ef;
-  --border-color: #d9d9d9;
+  --white-color: #ffffff;
+  --heading-color: #111827;
+  --body-color: #4b5563;
+  --accent-color: #d92525;
+  --primary-navy: #111827;
+  --navy-dark: #0f172a;
+  --navy-light: #1f2937;
+  --accent-gold: #ffcc00;
+  --accent-gold-hover: #e5b800;
+  --accent-gold-light: rgba(255, 204, 0, 0.12);
+  --accent-red: #d92525;
+  --german-gold: #ffcc00;
+  --german-yellow: #ffcc00;
+  --german-red: #d92525;
+  --german-black: #111827;
+  --gray-color: #f8fafc;
+  --border-color: #e2e8f0;
   --heading-font: "Euclid Circular A", sans-serif;
   --body-font: "Euclid Circular A", sans-serif;
 }
 
 .td_theme_2 {
-  --accent-color: #6440fb;
+  --accent-color: #d92525;
+  --heading-color: #111827;
+  --primary-navy: #111827;
+  --accent-gold: #ffcc00;
 }
 
 .td_theme_3 {
@@ -15037,9 +15051,9 @@ button.td_icon_btn:hover {
   font-size: 14px !important;
   font-weight: 600 !important;
   border-radius: 8px !important;
-  background: #f1f5f9 !important;
+  background: #f8fafc !important;
   border: 1px solid #e2e8f0 !important;
-  color: #002244 !important;
+  color: #111827 !important;
   display: flex !important;
   align-items: center !important;
   gap: 6px !important;
@@ -15047,8 +15061,9 @@ button.td_icon_btn:hover {
   transition: all 0.2s ease !important;
 }
 .td_site_header .td_header_dropdown_btn:hover {
-  background: #e2e8f0 !important;
-  color: #006699 !important;
+  background: #fff5f5 !important;
+  color: #d92525 !important;
+  border-color: #d92525 !important;
 }
 
 .td_site_header .td_main_header_center {
@@ -15112,7 +15127,7 @@ button.td_icon_btn:hover {
 .td_site_header .td_nav_list > li > a {
   font-size: 17px !important;
   font-weight: 600 !important;
-  color: #002244 !important;
+  color: #111827 !important;
   padding: 8px 6px !important;
   white-space: nowrap !important;
   text-decoration: none !important;
@@ -15124,7 +15139,7 @@ button.td_icon_btn:hover {
 
 .td_site_header .td_nav_list > li > a:hover,
 .td_site_header .td_nav_list > li > a.td_accent_color {
-  color: #006699 !important;
+  color: #d92525 !important;
 }
 
 .td_site_header .td_main_header_right {
@@ -15150,7 +15165,7 @@ button.td_icon_btn:hover {
   text-decoration: none !important;
   font-size: 16px !important;
   font-weight: 600 !important;
-  color: #002244 !important;
+  color: #111827 !important;
   display: flex !important;
   align-items: center !important;
 }
@@ -15160,6 +15175,17 @@ button.td_icon_btn:hover {
   font-size: 15px !important;
   font-weight: 700 !important;
   white-space: nowrap !important;
+  background: #d92525 !important;
+  color: #ffffff !important;
+  border: 1.5px solid #ffcc00 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 14px rgba(217, 37, 37, 0.25) !important;
+  transition: all 0.3s ease !important;
+}
+.td_site_header .td_btn.td_style_1:hover .td_btn_in {
+  background: #111827 !important;
+  color: #ffcc00 !important;
+  border-color: #ffcc00 !important;
 }
 
 @media (max-width: 1400px) and (min-width: 1200px) {
@@ -15213,8 +15239,8 @@ button.td_icon_btn:hover {
     width: 40px !important;
     height: 40px !important;
     border-radius: 8px !important;
-    background: #f1f5f9 !important;
-    color: #002244 !important;
+    background: #f8fafc !important;
+    color: #111827 !important;
     border: 1px solid #cbd5e1 !important;
     font-size: 18px !important;
     cursor: pointer !important;
@@ -15226,7 +15252,7 @@ button.td_icon_btn:hover {
     width: 100vw !important;
     height: calc(100vh - 88px) !important;
     background: #ffffff !important;
-    box-shadow: 0 10px 30px rgba(0, 34, 68, 0.15) !important;
+    box-shadow: 0 10px 30px rgba(17, 24, 39, 0.15) !important;
     display: none;
     flex-direction: column !important;
     padding: 24px 20px !important;
@@ -15251,11 +15277,11 @@ button.td_icon_btn:hover {
     padding: 14px 4px !important;
     font-size: 18px !important;
     font-weight: 600 !important;
-    color: #002244 !important;
+    color: #111827 !important;
     text-decoration: none !important;
   }
   .td_mobile_drawer .td_mobile_nav_list > li > a:hover {
-    color: #006699 !important;
+    color: #d92525 !important;
   }
 }
 
@@ -15284,7 +15310,7 @@ button.td_icon_btn:hover {
 
 .td_flag_stripe {
   height: 4px;
-  background: linear-gradient(90deg, #000 33.3%, #DD0000 33.3%, #DD0000 66.6%, #FFCC00 66.6%);
+  background: linear-gradient(90deg, #111827 0% 33.33%, #d92525 33.33% 66.66%, #ffcc00 66.66% 100%);
   width: 100%;
   display: block;
 }
@@ -15536,5 +15562,185 @@ section.py-5 {
     min-height: 280px;
   }
 }
+
+/* ============================================================
+   LEXDEUTSCH ACADEMY BRAND IDENTITY COLOR THEME
+   German Flag National Palette (Schwarz-Rot-Gold)
+   According to Crest Logo & Official Brochure
+   Palette:
+   - German Flag Black:   #111827 / #0f172a (Headers, Authority, Dark Sections)
+   - German Flag Red:     #d92525 / #c8102e (Primary Accent, Actions, Badges)
+   - German Flag Yellow:  #ffcc00 / #f59e0b (Secondary Accent, Stars, Highlights)
+   ============================================================ */
+
+/* Primary Button Styling */
+.td_btn.td_style_1 .td_btn_in.td_accent_bg {
+  background: #d92525 !important;
+  color: #ffffff !important;
+  border: 1.5px solid #ffcc00 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 14px rgba(217, 37, 37, 0.28) !important;
+  transition: all 0.3s ease !important;
+}
+.td_btn.td_style_1:hover .td_btn_in.td_accent_bg {
+  background: #111827 !important;
+  color: #ffcc00 !important;
+  border-color: #ffcc00 !important;
+  box-shadow: 0 6px 20px rgba(17, 24, 39, 0.35) !important;
+}
+.td_btn.td_style_1 .td_btn_in.td_accent_bg svg path {
+  transition: stroke 0.3s ease;
+}
+.td_btn.td_style_1:hover .td_btn_in.td_accent_bg svg path {
+  stroke: #ffcc00 !important;
+}
+
+/* Secondary Button Styling */
+.td_btn.td_style_2 {
+  background: #ffffff !important;
+  border: 2px solid #111827 !important;
+  color: #111827 !important;
+  transition: all 0.3s ease !important;
+}
+.td_btn.td_style_2:hover {
+  background: #111827 !important;
+  color: #ffcc00 !important;
+  border-color: #111827 !important;
+}
+
+/* Bootstrap Button Override */
+.btn-primary {
+  background-color: #d92525 !important;
+  border-color: #ffcc00 !important;
+  color: #ffffff !important;
+  transition: all 0.3s ease !important;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #111827 !important;
+  border-color: #ffcc00 !important;
+  color: #ffcc00 !important;
+  box-shadow: 0 4px 16px rgba(17, 24, 39, 0.3) !important;
+}
+
+/* Scroll-to-Top Button */
+.td_scrollup {
+  background-color: #111827 !important;
+  color: #ffcc00 !important;
+  border: 2px solid #ffcc00 !important;
+  box-shadow: 0 4px 14px rgba(17, 24, 39, 0.3) !important;
+}
+.td_scrollup i {
+  color: #ffcc00 !important;
+}
+.td_scrollup:hover {
+  background-color: #d92525 !important;
+}
+.td_scrollup:hover i {
+  color: #ffffff !important;
+}
+
+/* Global Footer Alignment with German Flag Palette */
+.td_footer.td_style_1,
+.td_footer.td_style_1.td_color_1 {
+  background-color: #111827 !important;
+  color: #ffffff !important;
+}
+.td_footer .td_footer_widget_title {
+  color: #ffffff !important;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+.td_footer .td_footer_widget_title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 42px;
+  height: 3px;
+  background: linear-gradient(90deg, #d92525 0% 50%, #ffcc00 50% 100%);
+  border-radius: 2px;
+}
+.td_footer .td_footer_widget_menu a:hover,
+.td_footer .td_footer_address_widget a:hover {
+  color: #ffcc00 !important;
+  padding-left: 4px;
+}
+.td_footer .td_footer_address_widget i {
+  color: #ffcc00 !important;
+}
+.td_footer_bottom {
+  border-top: 1px solid rgba(255, 204, 0, 0.25) !important;
+}
+
+/* German Flag Ribbon Bar */
+.td_flag_stripe,
+.td_german_flag_bar {
+  height: 5px !important;
+  background: linear-gradient(90deg, #111827 0% 33.33%, #d92525 33.33% 66.66%, #ffcc00 66.66% 100%) !important;
+  width: 100% !important;
+  display: block !important;
+}
+
+/* Global Brand Utility Classes */
+.td_brand_black_bg {
+  background-color: #111827 !important;
+}
+.td_brand_black_color {
+  color: #111827 !important;
+}
+.td_brand_navy_bg {
+  background-color: #111827 !important;
+}
+.td_brand_navy_color {
+  color: #111827 !important;
+}
+.td_brand_red_bg {
+  background-color: #d92525 !important;
+}
+.td_brand_red_color {
+  color: #d92525 !important;
+}
+.td_brand_yellow_bg {
+  background-color: #ffcc00 !important;
+}
+.td_brand_yellow_color {
+  color: #ffcc00 !important;
+}
+.td_brand_gold_bg {
+  background-color: #ffcc00 !important;
+}
+.td_brand_gold_color {
+  color: #ffcc00 !important;
+}
+
+/* Global Interactive Card & Icon Hover States */
+.td_why_card:hover .td_check_icon {
+  background: #111827 !important;
+  color: #ffcc00 !important;
+  border-color: #d92525 !important;
+}
+.td_iconbox.td_style_3:hover {
+  border-color: #d92525 !important;
+  box-shadow: 0 10px 28px rgba(217, 37, 37, 0.15) !important;
+}
+.td_iconbox.td_style_3:hover .td_iconbox_title {
+  color: #d92525 !important;
+}
+.td_stat_strip_item:hover {
+  border-color: #d92525 !important;
+  box-shadow: 0 10px 24px rgba(217, 37, 37, 0.15) !important;
+}
+.td_accordian.active {
+  border-color: #d92525 !important;
+  background: #ffffff !important;
+}
+.td_accordian.active .td_accordian_toggle {
+  background-color: #d92525 !important;
+  color: #ffffff !important;
+}
+
 
 

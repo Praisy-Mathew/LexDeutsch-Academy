@@ -14,15 +14,19 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
       :root {
-        --primary-blue: #006699;
-        --dark-navy: #002244;
-        --german-gold: #FFCC00;
-        --german-red: #DD0000;
+        --primary-blue: #111827;
+        --primary-navy: #111827;
+        --dark-navy: #111827;
+        --accent-gold: #ffcc00;
+        --german-gold: #ffcc00;
+        --german-yellow: #ffcc00;
+        --german-red: #d92525;
+        --german-black: #111827;
         --light-bg: #f8fafc;
         --card-border: #e2e8f0;
       }
       .td_germany_hero {
-        background: linear-gradient(135deg, rgba(0, 34, 68, 0.95) 0%, rgba(0, 102, 153, 0.88) 100%), url('assets/img/lexdeutsch/berlin_gate.jpg') center/cover no-repeat;
+        background: linear-gradient(135deg, rgba(17, 24, 39, 0.95) 0%, rgba(31, 41, 55, 0.88) 100%), url('assets/img/lexdeutsch/berlin_gate.jpg') center/cover no-repeat;
         padding: 110px 0 85px;
         position: relative;
       }
@@ -44,15 +48,15 @@
         background: #fff;
         border-radius: 16px;
         border: 1px solid var(--card-border);
-        box-shadow: 0 4px 20px rgba(0, 34, 68, 0.05);
+        box-shadow: 0 4px 20px rgba(17, 24, 39, 0.05);
         padding: 28px;
         height: 100%;
         transition: all 0.3s ease;
       }
       .td_info_card:hover {
         transform: translateY(-5px);
-        box-shadow: 0 12px 30px rgba(0, 34, 68, 0.1);
-        border-color: #006699;
+        box-shadow: 0 12px 30px rgba(217, 37, 37, 0.15);
+        border-color: #d92525;
       }
       .td_state_card {
         background: #fff;
@@ -257,7 +261,7 @@
               <i class="fa-solid fa-phone td_accent_color"></i> +91 9562 160 437
             </a>
           </div>
-          <a href="contact.html#enquiry-form" class="btn btn-primary w-100 py-2 fw-bold text-white" style="background:#006699; border:none;">ENROLL NOW</a>
+          <a href="contact.html#enquiry-form" class="btn btn-primary w-100 py-2 fw-bold text-white" style="background:#d92525; border: 1.5px solid #ffcc00;">ENROLL NOW</a>
         </div>
       </div>
     </header>
@@ -288,7 +292,7 @@
     </section>
 
     <!-- ==================== Quick Stats Bar ==================== -->
-    <section class="py-4" style="background: #002244;">
+    <section class="py-4" style="background: #111827; border-top: 2px solid #d92525; border-bottom: 2px solid #ffcc00;">
       <div class="container">
         <div class="row g-3">
           <div class="col-6 col-md-3">
@@ -934,23 +938,24 @@
     </section>
 
     <!-- ==================== Call to Action Banner ==================== -->
-    <section class="py-5" style="background: linear-gradient(135deg, #002244 0%, #006699 100%);">
+    <section class="py-5" style="background: linear-gradient(135deg, #111827 0%, #1f2937 100%); border-top: 3px solid #d92525; border-bottom: 3px solid #ffcc00;">
       <div class="container py-lg-4">
         <div class="row justify-content-center text-center">
           <div class="col-lg-9 text-white">
-            <div class="d-inline-flex align-items-center gap-2 px-3 py-1 mb-3 rounded-pill" style="background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25);">
-              <i class="fa-solid fa-graduation-cap"></i>
-              <span class="td_fs_13 td_semibold text-uppercase" style="letter-spacing: 1px;">Language. Knowledge. Future.</span>
+            <div class="d-inline-flex align-items-center gap-2 px-3 py-1 mb-3 rounded-pill" style="background: rgba(255,204,0,0.18); border: 1px solid rgba(255,204,0,0.4);">
+              <i class="fa-solid fa-graduation-cap" style="color: #ffcc00;"></i>
+              <span class="td_fs_13 td_semibold text-uppercase" style="letter-spacing: 1px; color: #ffcc00;">Language. Knowledge. Future.</span>
             </div>
             <h2 class="td_fs_44 td_bold text-white mb-3">Ready to Start Your Journey to Germany?</h2>
+            <div style="width: 70px; height: 3px; margin: 0 auto 20px; background: linear-gradient(90deg, #111827 0% 33.3%, #d92525 33.3% 66.6%, #ffcc00 66.6% 100%); border-radius: 2px;"></div>
             <p class="td_fs_18 text-white-50 mb-4" style="line-height: 1.7;">
               Whether you are preparing for university studies, Ausbildung vocational training, a healthcare nursing career, or living in Germany, LexDeutsch Academy provides comprehensive German language training from foundation (A1) to advanced level (B2) with dedicated TELC and Goethe exam preparation.
             </p>
             <div class="d-flex flex-wrap justify-content-center gap-3">
-              <a href="courses-grid-view.html" class="td_btn td_style_1 td_radius_10 td_medium" style="background: #fff; color: #002244; font-weight: 700; padding: 14px 32px; text-decoration: none;">
+              <a href="courses-grid-view.html" class="td_btn td_style_1 td_radius_10 td_medium" style="background: #ffffff; color: #111827; font-weight: 700; padding: 14px 32px; text-decoration: none; border: 2px solid #111827;">
                 EXPLORE COURSES
               </a>
-              <a href="contact.html" class="td_btn td_style_1 td_radius_10 td_medium" style="background: #ffcc00; color: #002244; font-weight: 700; padding: 14px 32px; text-decoration: none;">
+              <a href="contact.html" class="td_btn td_style_1 td_radius_10 td_medium" style="background: #d92525; color: #ffffff; font-weight: 700; padding: 14px 32px; text-decoration: none; border: 1.5px solid #ffcc00; box-shadow: 0 4px 16px rgba(217, 37, 37, 0.35);">
                 BOOK A FREE DEMO CLASS
               </a>
             </div>

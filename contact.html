@@ -18,23 +18,27 @@
 
     <style>
       :root {
-        --primary-blue: #006699;
-        --dark-navy: #002244;
+        --primary-blue: #111827;
+        --primary-navy: #111827;
+        --dark-navy: #111827;
+        --accent-gold: #ffcc00;
         --german-gold: #ffcc00;
-        --german-red: #dd0000;
+        --german-black: #111827;
+        --german-red: #d92525;
+        --german-yellow: #ffcc00;
         --light-bg: #f8fafc;
         --card-border: #e2e8f0;
       }
 
       .td_contact_hero {
-        background: linear-gradient(135deg, rgba(0, 34, 68, 0.95) 0%, rgba(0, 102, 153, 0.88) 100%), url('assets/img/lexdeutsch/berlin_gate.jpg') center/cover no-repeat;
+        background: linear-gradient(135deg, rgba(17, 24, 39, 0.95) 0%, rgba(31, 41, 55, 0.90) 100%), url('assets/img/lexdeutsch/berlin_gate.jpg') center/cover no-repeat;
         padding: 100px 0 80px;
         position: relative;
       }
 
       .td_flag_stripe {
         height: 4px;
-        background: linear-gradient(90deg, #000 33.3%, #DD0000 33.3%, #DD0000 66.6%, #FFCC00 66.6%);
+        background: linear-gradient(90deg, #111827 0% 33.33%, #d92525 33.33% 66.66%, #ffcc00 66.66% 100%);
         width: 100%;
         display: block;
       }
@@ -49,8 +53,8 @@
       }
       .td_enroll_card:hover {
         transform: translateY(-5px);
-        box-shadow: 0 14px 30px rgba(0, 34, 68, 0.08);
-        border-color: var(--primary-blue);
+        box-shadow: 0 14px 30px rgba(17, 24, 39, 0.1);
+        border-color: #d92525;
       }
 
       .td_course_chip {
@@ -69,17 +73,17 @@
       }
       .td_course_chip:hover {
         background: #fff;
-        border-color: var(--primary-blue);
-        box-shadow: 0 4px 16px rgba(0, 102, 153, 0.1);
+        border-color: #d92525;
+        box-shadow: 0 4px 16px rgba(217, 37, 37, 0.12);
         transform: translateX(4px);
-        color: var(--primary-blue);
+        color: #d92525;
       }
 
       .td_contact_card {
         background: #fff;
         border-radius: 16px;
         border: 1px solid var(--card-border);
-        box-shadow: 0 4px 20px rgba(0, 34, 68, 0.05);
+        box-shadow: 0 4px 20px rgba(17, 24, 39, 0.05);
         padding: 32px;
         height: 100%;
       }
@@ -97,15 +101,15 @@
       }
       .td_contact_info_box:hover {
         background: #fff;
-        border-color: var(--primary-blue);
-        box-shadow: 0 6px 18px rgba(0, 102, 153, 0.08);
+        border-color: #d92525;
+        box-shadow: 0 6px 18px rgba(217, 37, 37, 0.08);
       }
       .td_contact_icon_circle {
         width: 46px;
         height: 46px;
         border-radius: 12px;
-        background: rgba(0, 102, 153, 0.1);
-        color: var(--primary-blue);
+        background: rgba(217, 37, 37, 0.1);
+        color: #d92525;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -117,7 +121,7 @@
         background: #fff;
         border-radius: 20px;
         border: 1px solid var(--card-border);
-        box-shadow: 0 12px 40px rgba(0, 34, 68, 0.08);
+        box-shadow: 0 12px 40px rgba(17, 24, 39, 0.08);
         padding: 36px;
       }
 
@@ -142,8 +146,8 @@
       }
       .td_input_control:focus {
         background: #fff;
-        border-color: var(--primary-blue);
-        box-shadow: 0 0 0 4px rgba(0, 102, 153, 0.12);
+        border-color: #d92525;
+        box-shadow: 0 0 0 4px rgba(217, 37, 37, 0.12);
       }
 
       .td_mode_toggle {
@@ -175,13 +179,14 @@
         margin-bottom: 0;
       }
       .td_mode_option input[type="radio"]:checked + .td_mode_label {
-        border-color: var(--primary-blue);
-        background: rgba(0, 102, 153, 0.08);
-        color: var(--primary-blue);
+        border-color: #d92525;
+        background: rgba(217, 37, 37, 0.08);
+        color: #d92525;
       }
 
       .td_demo_card {
-        background: linear-gradient(135deg, #002244 0%, #006699 100%);
+        background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+        border: 1.5px solid rgba(255, 204, 0, 0.4);
         border-radius: 20px;
         padding: 40px;
         color: #fff;
@@ -201,7 +206,9 @@
       }
 
       .td_journey_banner {
-        background: linear-gradient(135deg, #002244 0%, #004d73 100%);
+        background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+        border-top: 3px solid #d92525;
+        border-bottom: 3px solid #ffcc00;
         border-radius: 20px;
         padding: 50px 30px;
         position: relative;
@@ -289,7 +296,7 @@
               <i class="fa-solid fa-phone td_accent_color"></i> +91 9562 160 437
             </a>
           </div>
-          <a href="contact.html#enquiry-form" class="btn btn-primary w-100 py-2 fw-bold text-white" style="background:#006699; border:none;">ENROLL NOW</a>
+          <a href="contact.html#enquiry-form" class="btn btn-primary w-100 py-2 fw-bold text-white" style="background:#d92525; border: 1.5px solid #ffcc00;">ENROLL NOW</a>
         </div>
       </div>
     </header>
@@ -310,7 +317,7 @@
               Whether you are starting from A1, preparing for a TELC or Goethe examination, improving your spoken German, or preparing for a career in Germany, LexDeutsch Academy is here to guide you.
             </p>
             <div class="d-flex flex-wrap justify-content-center gap-3">
-              <a href="#enroll-now" class="td_btn td_style_1 td_radius_10 td_medium" style="background: #ffcc00; color: #002244; font-weight: 700; padding: 13px 30px; text-decoration: none;">
+              <a href="#enroll-now" class="td_btn td_style_1 td_radius_10 td_medium" style="background: #ffcc00; color: #111827; font-weight: 700; padding: 13px 30px; text-decoration: none; box-shadow: 0 4px 16px rgba(255, 204, 0, 0.35);">
                 CHOOSE A PROGRAM
               </a>
               <a href="#enquiry-form" class="td_btn td_style_1 td_radius_10 td_medium" style="background: rgba(255,255,255,0.15); color: #fff; border: 1px solid rgba(255,255,255,0.4); font-weight: 600; padding: 13px 30px; text-decoration: none;">
@@ -498,7 +505,7 @@
               </div>
             </div>
             <div class="col-lg-4 text-lg-end text-center">
-              <a href="#enquiry-form" onclick="selectCourse('Demo')" class="td_btn td_style_1 td_radius_10 td_medium" style="background: #ffcc00; color: #002244; font-weight: 700; padding: 16px 36px; text-decoration: none; font-size: 16px; box-shadow: 0 8px 24px rgba(255,204,0,0.3);">
+              <a href="#enquiry-form" onclick="selectCourse('Demo')" class="td_btn td_style_1 td_radius_10 td_medium" style="background: #ffcc00; color: #111827; font-weight: 700; padding: 16px 36px; text-decoration: none; font-size: 16px; box-shadow: 0 8px 24px rgba(255,204,0,0.35); border: 1.5px solid #ffcc00;">
                 Book a Free Demo Class
               </a>
             </div>
@@ -664,7 +671,7 @@
                 </div>
 
                 <!-- Submit Button -->
-                <button type="submit" id="submitBtn" class="td_btn td_style_1 td_radius_10 td_medium w-100" style="background: var(--primary-blue); color: #fff; font-weight: 700; padding: 15px; border: none; font-size: 16px;">
+                <button type="submit" id="submitBtn" class="td_btn td_style_1 td_radius_10 td_medium w-100" style="background: #d92525; color: #fff; font-weight: 700; padding: 15px; border: 1.5px solid #ffcc00; font-size: 16px;">
                   <span class="d-flex align-items-center justify-content-center gap-2">
                     <span>Submit Enquiry</span>
                     <i class="fa-solid fa-paper-plane"></i>
